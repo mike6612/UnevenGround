@@ -44,7 +44,33 @@
     <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
-  <ItemGroup>     <Compile Include="Assets\module-omicron\CAVE2\Examples\CAVESimulator\Scripts\CAVE2Display.cs" />
+  <ItemGroup>     <Compile Include="Assets\CoffeeShopStarterPack\Scripts\BewerageMaker.cs" />
+     <Compile Include="Assets\CoffeeShopStarterPack\Scripts\CookableProduct.cs" />
+     <Compile Include="Assets\CoffeeShopStarterPack\Scripts\CookingGameObject.cs" />
+     <Compile Include="Assets\CoffeeShopStarterPack\Scripts\CreateProductOnPlaceHolder.cs" />
+     <Compile Include="Assets\CoffeeShopStarterPack\Scripts\DeleteProductOnSlot.cs" />
+     <Compile Include="Assets\CoffeeShopStarterPack\Scripts\DrinkableProduct.cs" />
+     <Compile Include="Assets\CoffeeShopStarterPack\Scripts\FillCupHelper.cs" />
+     <Compile Include="Assets\CoffeeShopStarterPack\Scripts\HeatableProduct.cs" />
+     <Compile Include="Assets\CoffeeShopStarterPack\Scripts\Microwave.cs" />
+     <Compile Include="Assets\CoffeeShopStarterPack\Scripts\OnClickCoverHelper.cs" />
+     <Compile Include="Assets\CoffeeShopStarterPack\Scripts\OrderGenerator.cs" />
+     <Compile Include="Assets\CoffeeShopStarterPack\Scripts\PanGameObject.cs" />
+     <Compile Include="Assets\CoffeeShopStarterPack\Scripts\PlayerSlots.cs" />
+     <Compile Include="Assets\CoffeeShopStarterPack\Scripts\Product.cs" />
+     <Compile Include="Assets\CoffeeShopStarterPack\Scripts\ProductGameObject.cs" />
+     <Compile Include="Assets\CoffeeShopStarterPack\Scripts\ProductManager.cs" />
+     <Compile Include="Assets\CoffeeShopStarterPack\Scripts\ProductType.cs" />
+     <Compile Include="Assets\CoffeeShopStarterPack\Scripts\ProductWithCover.cs" />
+     <Compile Include="Assets\CoffeeShopStarterPack\Scripts\ProgressHelper.cs" />
+     <Compile Include="Assets\CoffeeShopStarterPack\Scripts\ReadyToServe.cs" />
+     <Compile Include="Assets\CoffeeShopStarterPack\Scripts\ServeOrder.cs" />
+     <Compile Include="Assets\CoffeeShopStarterPack\Scripts\StoveGameObject.cs" />
+     <Compile Include="Assets\CoffeeShopStarterPack\Scripts\Utilities\BasicCameraControl.cs" />
+     <Compile Include="Assets\CoffeeShopStarterPack\Scripts\Utilities\BasicGameEvents.cs" />
+     <Compile Include="Assets\CoffeeShopStarterPack\Scripts\Utilities\ScreenShotHelper.cs" />
+     <Compile Include="Assets\CoffeeShopStarterPack\Scripts\Utilities\SliceHelper.cs" />
+     <Compile Include="Assets\module-omicron\CAVE2\Examples\CAVESimulator\Scripts\CAVE2Display.cs" />
      <Compile Include="Assets\module-omicron\CAVE2\Examples\CAVESimulator\Scripts\CAVE2RemoteFineAdjustment.cs" />
      <Compile Include="Assets\module-omicron\CAVE2\Examples\CAVESimulator\Scripts\CustomHMDPerspective.cs" />
      <Compile Include="Assets\module-omicron\CAVE2\Examples\CAVESimulator\Scripts\DisplayInfo.cs" />
@@ -179,16 +205,20 @@
      <Compile Include="Assets\module-omicron\Tests\Touch\SimpleCanvasTouch.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+     <None Include="Assets\WoodsLifestyle\VERSION.txt" />
      <None Include="Assets\module-omicron\Shaders\Transparent-InvisibleShadowCaster.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
      <None Include="Assets\module-omicron\CAVE2\Shaders\CAVE2-UI Default.shader" />
+     <None Include="Assets\WoodsLifestyle\TextureSystem.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
      <None Include="Assets\module-omicron\Shaders\3D Text (Billboard).shader" />
+     <None Include="Assets\LowPolyOfficeProps_LITE\About.txt" />
      <None Include="Assets\materals\EasyRoads3D\shaders\EasyRoads3D-Surface-Offset.shader" />
      <None Include="Assets\module-omicron\CAVE2\Examples\Generalized Perspective Projection\Shaders\StereoscopicShader.shader" />
      <None Include="Assets\module-omicron\Shaders\Transparent-Self-Illumin.shader" />
      <None Include="Assets\EasyRoads3D scenes\KajamansRoads\FileNamesDescription.txt" />
      <None Include="Assets\module-omicron\CAVE2\Shaders\CAVE2-UI Default Font.shader" />
+     <None Include="Assets\WoodsLifestyle\NOTES.txt" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
      <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
@@ -218,6 +248,7 @@
      <None Include="Assets\materals\EasyRoads3D\shaders\EasyRoads3D-Road-Edit-Mode.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
+     <None Include="Assets\FoodAndGrocery\Info.txt" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/Users/ricar/UnevenGround/UnevenGround/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
