@@ -18,15 +18,12 @@ public class TriggerElevatorAnimation : MonoBehaviour
     {
     }
 
-    private void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter(Collider other)
     {
-        if (!collision.gameObject.CompareTag("Player")) { return; }
-
+        if (!other.gameObject.CompareTag("Player")) { return; }
         if (!animator.GetCurrentAnimatorStateInfo(0).IsName("OpenDoor"))
         {
             animator.Play(m_BounceStateHash, 0, 0f);
         }
-
     }
-
 }
