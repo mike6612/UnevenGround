@@ -11,10 +11,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{CCAF20B1-3D38-C39A-3810-3DAE44F95A22}</ProjectGuid>
+    <ProjectGuid>{18C27CAD-2726-B230-28A4-6DB4ACE4560F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
+    <AssemblyName>UnityEditor.UI</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
@@ -55,92 +55,42 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\CoffeeShopStarterPack\Scripts\Editor\BewerageMakerEditor.cs" />
-     <Compile Include="Assets\CoffeeShopStarterPack\Scripts\Editor\ProductEditor.cs" />
-     <Compile Include="Assets\CoffeeShopStarterPack\Scripts\Editor\ProductManagerEditor.cs" />
-     <Compile Include="Assets\CoffeeShopStarterPack\Scripts\Editor\ScreenShotHelperEditor.cs" />
-     <Compile Include="Assets\CoffeeShopStarterPack\Scripts\Editor\ScreenShotImportSettings.cs" />
-     <Compile Include="Assets\CoffeeShopStarterPack\Scripts\Editor\SliceHelperEditor.cs" />
-     <Compile Include="Assets\module-omicron\CAVE2\Scripts\Editor\OmicronEditorMode.cs" />
-     <Compile Include="Assets\module-omicron\Scripts\Util\Editor\CreateAssetBundles.cs" />
- <Reference Include="UnityEditor.TestRunner">
- <HintPath>C:/Users/jason/OneDrive/Desktop/Spring 2026/CS 427/UnevenGround/UnevenGround/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.TestRunner">
- <HintPath>C:/Users/jason/OneDrive/Desktop/Spring 2026/CS 427/UnevenGround/UnevenGround/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Timeline.Editor">
- <HintPath>C:/Users/jason/OneDrive/Desktop/Spring 2026/CS 427/UnevenGround/UnevenGround/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
- </Reference>
- <Reference Include="com.unity.multiplayer-hlapi.Editor">
- <HintPath>C:/Users/jason/OneDrive/Desktop/Spring 2026/CS 427/UnevenGround/UnevenGround/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.VSCode.Editor">
- <HintPath>C:/Users/jason/OneDrive/Desktop/Spring 2026/CS 427/UnevenGround/UnevenGround/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.RenderPipelines.Core.Editor">
- <HintPath>C:/Users/jason/OneDrive/Desktop/Spring 2026/CS 427/UnevenGround/UnevenGround/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.RenderPipelines.Core.Runtime">
- <HintPath>C:/Users/jason/OneDrive/Desktop/Spring 2026/CS 427/UnevenGround/UnevenGround/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
- </Reference>
- <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Users/jason/OneDrive/Desktop/Spring 2026/CS 427/UnevenGround/UnevenGround/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UI">
- <HintPath>C:/Users/jason/OneDrive/Desktop/Spring 2026/CS 427/UnevenGround/UnevenGround/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Timeline">
- <HintPath>C:/Users/jason/OneDrive/Desktop/Spring 2026/CS 427/UnevenGround/UnevenGround/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
- </Reference>
- <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>C:/Users/jason/OneDrive/Desktop/Spring 2026/CS 427/UnevenGround/UnevenGround/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
- </Reference>
- <Reference Include="com.unity.multiplayer-weaver.Editor">
- <HintPath>C:/Users/jason/OneDrive/Desktop/Spring 2026/CS 427/UnevenGround/UnevenGround/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.XR.LegacyInputHelpers">
- <HintPath>C:/Users/jason/OneDrive/Desktop/Spring 2026/CS 427/UnevenGround/UnevenGround/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Rider.Editor">
- <HintPath>C:/Users/jason/OneDrive/Desktop/Spring 2026/CS 427/UnevenGround/UnevenGround/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
- <HintPath>C:/Users/jason/OneDrive/Desktop/Spring 2026/CS 427/UnevenGround/UnevenGround/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
- </Reference>
- <Reference Include="Unity.2D.Sprite.Editor">
- <HintPath>C:/Users/jason/OneDrive/Desktop/Spring 2026/CS 427/UnevenGround/UnevenGround/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.2D.Tilemap.Editor">
- <HintPath>C:/Users/jason/OneDrive/Desktop/Spring 2026/CS 427/UnevenGround/UnevenGround/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.SpatialTracking">
- <HintPath>C:/Users/jason/OneDrive/Desktop/Spring 2026/CS 427/UnevenGround/UnevenGround/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.SpatialTracking">
- <HintPath>C:/Users/jason/OneDrive/Desktop/Spring 2026/CS 427/UnevenGround/UnevenGround/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
- </Reference>
- <Reference Include="Unity.ShaderGraph.Editor">
- <HintPath>C:/Users/jason/OneDrive/Desktop/Spring 2026/CS 427/UnevenGround/UnevenGround/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
- <HintPath>C:/Users/jason/OneDrive/Desktop/Spring 2026/CS 427/UnevenGround/UnevenGround/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
- </Reference>
- <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/jason/OneDrive/Desktop/Spring 2026/CS 427/UnevenGround/UnevenGround/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Analytics.DataPrivacy">
- <HintPath>C:/Users/jason/OneDrive/Desktop/Spring 2026/CS 427/UnevenGround/UnevenGround/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.XR.LegacyInputHelpers">
- <HintPath>C:/Users/jason/OneDrive/Desktop/Spring 2026/CS 427/UnevenGround/UnevenGround/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.UI">
- <HintPath>C:/Users/jason/OneDrive/Desktop/Spring 2026/CS 427/UnevenGround/UnevenGround/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
- </Reference>
- <Reference Include="com.unity.multiplayer-hlapi.Runtime">
- <HintPath>C:/Users/jason/OneDrive/Desktop/Spring 2026/CS 427/UnevenGround/UnevenGround/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
- </Reference>
+     <Compile Include="C:\Program Files\Unity\Hub\Editor\2019.2.11f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Editor\EventSystem\EventSystemEditor.cs" />
+     <Compile Include="C:\Program Files\Unity\Hub\Editor\2019.2.11f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Editor\EventSystem\EventTriggerEditor.cs" />
+     <Compile Include="C:\Program Files\Unity\Hub\Editor\2019.2.11f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Editor\Properties\AssemblyInfo.cs" />
+     <Compile Include="C:\Program Files\Unity\Hub\Editor\2019.2.11f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Editor\UI\AspectRatioFitterEditor.cs" />
+     <Compile Include="C:\Program Files\Unity\Hub\Editor\2019.2.11f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Editor\UI\ButtonEditor.cs" />
+     <Compile Include="C:\Program Files\Unity\Hub\Editor\2019.2.11f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Editor\UI\CanvasScalerEditor.cs" />
+     <Compile Include="C:\Program Files\Unity\Hub\Editor\2019.2.11f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Editor\UI\ContentSizeFitterEditor.cs" />
+     <Compile Include="C:\Program Files\Unity\Hub\Editor\2019.2.11f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Editor\UI\DropdownEditor.cs" />
+     <Compile Include="C:\Program Files\Unity\Hub\Editor\2019.2.11f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Editor\UI\GraphicEditor.cs" />
+     <Compile Include="C:\Program Files\Unity\Hub\Editor\2019.2.11f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Editor\UI\GridLayoutGroupEditor.cs" />
+     <Compile Include="C:\Program Files\Unity\Hub\Editor\2019.2.11f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Editor\UI\HorizontalOrVerticalLayoutGroupEditor.cs" />
+     <Compile Include="C:\Program Files\Unity\Hub\Editor\2019.2.11f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Editor\UI\ImageEditor.cs" />
+     <Compile Include="C:\Program Files\Unity\Hub\Editor\2019.2.11f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Editor\UI\InputFieldEditor.cs" />
+     <Compile Include="C:\Program Files\Unity\Hub\Editor\2019.2.11f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Editor\UI\InterceptedEventsPreview.cs" />
+     <Compile Include="C:\Program Files\Unity\Hub\Editor\2019.2.11f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Editor\UI\LayoutElementEditor.cs" />
+     <Compile Include="C:\Program Files\Unity\Hub\Editor\2019.2.11f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Editor\UI\LayoutPropertiesPreview.cs" />
+     <Compile Include="C:\Program Files\Unity\Hub\Editor\2019.2.11f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Editor\UI\MaskEditor.cs" />
+     <Compile Include="C:\Program Files\Unity\Hub\Editor\2019.2.11f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Editor\UI\MenuOptions.cs" />
+     <Compile Include="C:\Program Files\Unity\Hub\Editor\2019.2.11f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Editor\UI\PrefabLayoutRebuilder.cs" />
+     <Compile Include="C:\Program Files\Unity\Hub\Editor\2019.2.11f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Editor\UI\PropertyDrawers\AnimationTriggersDrawer.cs" />
+     <Compile Include="C:\Program Files\Unity\Hub\Editor\2019.2.11f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Editor\UI\PropertyDrawers\ColorBlockDrawer.cs" />
+     <Compile Include="C:\Program Files\Unity\Hub\Editor\2019.2.11f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Editor\UI\PropertyDrawers\DropdownOptionListDrawer.cs" />
+     <Compile Include="C:\Program Files\Unity\Hub\Editor\2019.2.11f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Editor\UI\PropertyDrawers\FontDataDrawer.cs" />
+     <Compile Include="C:\Program Files\Unity\Hub\Editor\2019.2.11f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Editor\UI\PropertyDrawers\NavigationDrawer.cs" />
+     <Compile Include="C:\Program Files\Unity\Hub\Editor\2019.2.11f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Editor\UI\PropertyDrawers\SpriteStateDrawer.cs" />
+     <Compile Include="C:\Program Files\Unity\Hub\Editor\2019.2.11f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Editor\UI\RawImageEditor.cs" />
+     <Compile Include="C:\Program Files\Unity\Hub\Editor\2019.2.11f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Editor\UI\RectMask2DEditor.cs" />
+     <Compile Include="C:\Program Files\Unity\Hub\Editor\2019.2.11f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Editor\UI\ScrollbarEditor.cs" />
+     <Compile Include="C:\Program Files\Unity\Hub\Editor\2019.2.11f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Editor\UI\ScrollRectEditor.cs" />
+     <Compile Include="C:\Program Files\Unity\Hub\Editor\2019.2.11f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Editor\UI\SelectableEditor.cs" />
+     <Compile Include="C:\Program Files\Unity\Hub\Editor\2019.2.11f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Editor\UI\SelfControllerEditor.cs" />
+     <Compile Include="C:\Program Files\Unity\Hub\Editor\2019.2.11f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Editor\UI\SliderEditor.cs" />
+     <Compile Include="C:\Program Files\Unity\Hub\Editor\2019.2.11f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Editor\UI\SpriteDrawUtility.cs" />
+     <Compile Include="C:\Program Files\Unity\Hub\Editor\2019.2.11f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Editor\UI\TextEditor.cs" />
+     <Compile Include="C:\Program Files\Unity\Hub\Editor\2019.2.11f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Editor\UI\ToggleEditor.cs" />
+     <None Include="C:\Program Files\Unity\Hub\Editor\2019.2.11f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Editor\UnityEditor.UI.asmdef" />
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
  </Reference>
@@ -707,9 +657,17 @@
  </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{ABEC025F-FD2A-EB47-8497-93621A03F3B3}</Project>
-      <Name>Assembly-CSharp</Name>
+    <ProjectReference Include="UnityEngine.UI.csproj">
+      <Project>{0D814B37-7CEA-8813-8920-F5EDA248F5B4}</Project>
+      <Name>UnityEngine.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEditor.TestRunner.csproj">
+      <Project>{A7A112F7-6597-E6B8-6F8D-9DC459F9A4E5}</Project>
+      <Name>UnityEditor.TestRunner</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.TestRunner.csproj">
+      <Project>{7B148FB6-745E-C406-D1DD-5D4D0BE6EEA5}</Project>
+      <Name>UnityEngine.TestRunner</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
