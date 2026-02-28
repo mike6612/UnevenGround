@@ -10,6 +10,7 @@ public class TriggerElevatorAnimation : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
+        animator.enabled = false;
         m_BounceStateHash = Animator.StringToHash("Base Layer.OpenDoor");
     }
 
@@ -21,6 +22,8 @@ public class TriggerElevatorAnimation : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         if (!other.gameObject.CompareTag("Player")) { return; }
+        animator.enabled = true;
+
         if (!animator.GetCurrentAnimatorStateInfo(0).IsName("OpenDoor"))
         {
             animator.Play(m_BounceStateHash, 0, 0f);
