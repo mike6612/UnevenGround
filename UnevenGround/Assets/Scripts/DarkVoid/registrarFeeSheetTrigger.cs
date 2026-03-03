@@ -1,6 +1,4 @@
-﻿
-
-
+﻿using TMPro;
 using UnityEngine;
 using System.Collections;
 
@@ -14,6 +12,8 @@ public class registrarFeeSheetTrigger : MonoBehaviour
     private Vector3 originalPosition;
     private Quaternion originalRotation;
     private bool isRunning = false;
+    public TextMeshProUGUI feeText;
+    public TextMeshProUGUI feeTitleText;
 
     void Start()
     {
@@ -45,12 +45,24 @@ public class registrarFeeSheetTrigger : MonoBehaviour
 
         yield return StartCoroutine(MoveQuad(facePosition, faceRotation));
 
-        // Step 3: Show hidden fees (placeholder delay)
-        Debug.Log("Hidden Fee 1");
-        yield return new WaitForSeconds(2f);
-        Debug.Log("Hidden Fee 2");
-        yield return new WaitForSeconds(2f);
-        Debug.Log("Hidden Fee 3");
+        // Step 3: Show hidden fees 
+        string[] fees = {
+            "Processing Fee:                $150.00",
+            "Convenience Fee:               $80.00",
+            "Administrative Fee:             $55.00",
+        };
+        string text  = "Item                                   Total";
+ 
+        feeTitleText.text +=  text;
+        yield return new WaitForSeconds(1.5f);
+
+        foreach (string fee in fees)
+        {
+            feeText.text += fee + "\n";
+            feeText.text += "_____________________________________\n\n";
+            
+            yield return new WaitForSeconds(1.5f);
+        }
 
         yield return new WaitForSeconds(2f);
 
