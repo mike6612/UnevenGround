@@ -3,11 +3,31 @@
   "WorkspaceRootPath": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\module-omicron\\CAVE2\\Scripts\\Navigation\\CAVE2WandNavigator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|solutionrelative:Assets\\module-omicron\\CAVE2\\Scripts\\Navigation\\CAVE2WandNavigator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|c:\\users\\jason\\onedrive\\desktop\\spring 2026\\cs 427\\unevenground\\unevenground\\assets\\scripts\\darkvoid\\increasemovespeed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\darkvoid\\increasemovespeed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\assets\\module-omicron\\cave2\\scripts\\util\\cave2playeridentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|solutionrelative:assets\\module-omicron\\cave2\\scripts\\util\\cave2playeridentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\assets\\module-omicron\\cave2\\scripts\\updaters\\cave2transformsync.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|solutionrelative:assets\\module-omicron\\cave2\\scripts\\updaters\\cave2transformsync.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\assets\\module-omicron\\cave2\\scripts\\util\\cave2playercollider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|solutionrelative:assets\\module-omicron\\cave2\\scripts\\util\\cave2playercollider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\assets\\scripts\\highschoolscripts\\triggerelevatoranimation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\highschoolscripts\\triggerelevatoranimation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|c:\\users\\jason\\onedrive\\desktop\\spring 2026\\cs 427\\unevenground\\unevenground\\assets\\scripts\\highschoolscripts\\loadnextscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\assets\\scripts\\highschoolscripts\\loadnextscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\highschoolscripts\\loadnextscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -18,11 +38,88 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "IncreaseMoveSpeed.cs",
+              "DocumentMoniker": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\Scripts\\DarkVoid\\IncreaseMoveSpeed.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\DarkVoid\\IncreaseMoveSpeed.cs",
+              "ToolTip": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\Scripts\\DarkVoid\\IncreaseMoveSpeed.cs",
+              "RelativeToolTip": "Assets\\Scripts\\DarkVoid\\IncreaseMoveSpeed.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T23:25:33.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CAVE2PlayerCollider.cs",
+              "DocumentMoniker": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\module-omicron\\CAVE2\\Scripts\\Util\\CAVE2PlayerCollider.cs",
+              "RelativeDocumentMoniker": "Assets\\module-omicron\\CAVE2\\Scripts\\Util\\CAVE2PlayerCollider.cs",
+              "ToolTip": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\module-omicron\\CAVE2\\Scripts\\Util\\CAVE2PlayerCollider.cs",
+              "RelativeToolTip": "Assets\\module-omicron\\CAVE2\\Scripts\\Util\\CAVE2PlayerCollider.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAuwCcAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T23:25:33.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CAVE2TransformSync.cs",
+              "DocumentMoniker": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\module-omicron\\CAVE2\\Scripts\\Updaters\\CAVE2TransformSync.cs",
+              "RelativeDocumentMoniker": "Assets\\module-omicron\\CAVE2\\Scripts\\Updaters\\CAVE2TransformSync.cs",
+              "ToolTip": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\module-omicron\\CAVE2\\Scripts\\Updaters\\CAVE2TransformSync.cs",
+              "RelativeToolTip": "Assets\\module-omicron\\CAVE2\\Scripts\\Updaters\\CAVE2TransformSync.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T23:25:33.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CAVE2PlayerIdentity.cs",
+              "DocumentMoniker": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\module-omicron\\CAVE2\\Scripts\\Util\\CAVE2PlayerIdentity.cs",
+              "RelativeDocumentMoniker": "Assets\\module-omicron\\CAVE2\\Scripts\\Util\\CAVE2PlayerIdentity.cs",
+              "ToolTip": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\module-omicron\\CAVE2\\Scripts\\Util\\CAVE2PlayerIdentity.cs",
+              "RelativeToolTip": "Assets\\module-omicron\\CAVE2\\Scripts\\Util\\CAVE2PlayerIdentity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T23:25:33.285Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TriggerElevatorAnimation.cs",
+              "DocumentMoniker": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\Scripts\\HighSchoolScripts\\TriggerElevatorAnimation.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\HighSchoolScripts\\TriggerElevatorAnimation.cs",
+              "ToolTip": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\Scripts\\HighSchoolScripts\\TriggerElevatorAnimation.cs",
+              "RelativeToolTip": "Assets\\Scripts\\HighSchoolScripts\\TriggerElevatorAnimation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-28T01:37:41.617Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CAVE2WandNavigator.cs",
+              "DocumentMoniker": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\module-omicron\\CAVE2\\Scripts\\Navigation\\CAVE2WandNavigator.cs",
+              "RelativeDocumentMoniker": "Assets\\module-omicron\\CAVE2\\Scripts\\Navigation\\CAVE2WandNavigator.cs",
+              "ToolTip": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\module-omicron\\CAVE2\\Scripts\\Navigation\\CAVE2WandNavigator.cs",
+              "RelativeToolTip": "Assets\\module-omicron\\CAVE2\\Scripts\\Navigation\\CAVE2WandNavigator.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAywDIAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T23:25:33.295Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "LoadNextScene.cs",
               "DocumentMoniker": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\Scripts\\HighSchoolScripts\\LoadNextScene.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\HighSchoolScripts\\LoadNextScene.cs",
@@ -30,21 +127,7 @@
               "RelativeToolTip": "Assets\\Scripts\\HighSchoolScripts\\LoadNextScene.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-28T01:37:42.878Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TriggerElevatorAnimation.cs",
-              "DocumentMoniker": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\Scripts\\HighSchoolScripts\\TriggerElevatorAnimation.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\HighSchoolScripts\\TriggerElevatorAnimation.cs",
-              "ToolTip": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\Scripts\\HighSchoolScripts\\TriggerElevatorAnimation.cs",
-              "RelativeToolTip": "Assets\\Scripts\\HighSchoolScripts\\TriggerElevatorAnimation.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAywBYAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-28T01:37:41.617Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-28T01:37:42.878Z"
             }
           ]
         }

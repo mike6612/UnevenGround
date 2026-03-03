@@ -24,11 +24,11 @@
  * WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN 
  * ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *************************************************************************************************/
- 
-using UnityEngine;
-using System.Collections;
 
-public class CAVE2WandNavigator : MonoBehaviour {
+using UnityEngine;
+
+public class CAVE2WandNavigator : MonoBehaviour
+{
 
     [Header("Input")]
     [SerializeField] int headID = 1;
@@ -48,7 +48,7 @@ public class CAVE2WandNavigator : MonoBehaviour {
     [Header("Movement Speed")]
     [SerializeField] bool walkUsesFlyGlobalSpeedScale = false;
     public float globalSpeedMod = 1.0f;
-    [SerializeField] float movementScale = 5;
+    public float movementScale = 5;
     [SerializeField] float flyMovementScale = 5;
     [SerializeField] float turnSpeed = 20;
 
@@ -71,7 +71,7 @@ public class CAVE2WandNavigator : MonoBehaviour {
     public enum HorizonalMovementMode { Strafe, Turn }
     public HorizonalMovementMode horizontalMovementMode = HorizonalMovementMode.Strafe;
 
-    
+
 
     public enum ForwardRef { CAVEFront, Head, Wand }
     [SerializeField] ForwardRef forwardReference = ForwardRef.Wand;
@@ -132,17 +132,17 @@ public class CAVE2WandNavigator : MonoBehaviour {
     }
 
     // Use this for initialization
-    void Start ()
+    void Start()
     {
         initialPosition = transform.position;
         initialRotation = transform.rotation;
         initMode = navMode;
         lastNavMode = navMode;
 
-        if( bodyCollider == null )
+        if (bodyCollider == null)
             bodyCollider = GetComponent<CapsuleCollider>();
 
-        if( navMode == NavigationMode.Disabled )
+        if (navMode == NavigationMode.Disabled)
         {
             DisableMovement();
             lastNavMode = NavigationMode.Walk;
@@ -181,8 +181,8 @@ public class CAVE2WandNavigator : MonoBehaviour {
         wandID = id;
     }
 
-	// Update is called once per frame
-	void Update()
+    // Update is called once per frame
+    void Update()
     {
         float speedMod = 1;
         if (walkUsesFlyGlobalSpeedScale)
@@ -209,19 +209,19 @@ public class CAVE2WandNavigator : MonoBehaviour {
             lookAround.x = CAVE2.GetAxis(lookUDAxis, wandID);
             lookAround.y = CAVE2.GetAxis(lookLRAxis, wandID);
         }
-        
+
         forward *= movementScale * speedMod;
         strafe *= movementScale;
         lookAround.x *= movementScale;
         lookAround.y *= movementScale;
 
-        if(CAVE2.IsSimulatorMode())
+        if (CAVE2.IsSimulatorMode())
         {
-            if(Input.GetKey(CAVE2.GetCAVE2Manager().GetComponent<CAVE2InputManager>().simulatorFlyUp))
+            if (Input.GetKey(CAVE2.GetCAVE2Manager().GetComponent<CAVE2InputManager>().simulatorFlyUp))
             {
                 vertical = 1;
             }
-            else if(Input.GetKey(CAVE2.GetCAVE2Manager().GetComponent<CAVE2InputManager>().simulatorFlyDown))
+            else if (Input.GetKey(CAVE2.GetCAVE2Manager().GetComponent<CAVE2InputManager>().simulatorFlyDown))
             {
                 vertical = -1;
             }
@@ -424,7 +424,7 @@ public class CAVE2WandNavigator : MonoBehaviour {
             nextPos += transform.localRotation * movementVector * flyMovementScale * globalSpeedMod;
             if (navMode == NavigationMode.Freefly)
             {
-                transform.Rotate( CAVE2.GetWandObject(wandID).transform.localRotation * new Vector3(rX, rY, rZ));
+                transform.Rotate(CAVE2.GetWandObject(wandID).transform.localRotation * new Vector3(rX, rY, rZ));
             }
         }
 

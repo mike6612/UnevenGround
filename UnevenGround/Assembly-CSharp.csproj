@@ -214,6 +214,7 @@
      <Compile Include="Assets\module-omicron\Tests\Mocap\Mocap3DText.cs" />
      <Compile Include="Assets\module-omicron\Tests\Mocap\OmicronMocapObject.cs" />
      <Compile Include="Assets\module-omicron\Tests\Touch\SimpleCanvasTouch.cs" />
+     <Compile Include="Assets\Scripts\DarkVoid\IncreaseMoveSpeed.cs" />
      <Compile Include="Assets\Scripts\HighSchoolScripts\LoadNextScene.cs" />
      <Compile Include="Assets\Scripts\HighSchoolScripts\TriggerElevatorAnimation.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
