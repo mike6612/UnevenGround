@@ -327,6 +327,12 @@
  <Reference Include="UnityEditor.WindowsStandalone.Extensions">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
+ <Reference Include="EasyRoads3Dv3Editor">
+ <HintPath>C:/Users/jason/OneDrive/Desktop/Spring 2026/CS 427/UnevenGround/UnevenGround/Assets/Materials/materals/EasyRoads3D/Editor/EasyRoads3Dv3Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="EasyRoads3Dv3">
+ <HintPath>C:/Users/jason/OneDrive/Desktop/Spring 2026/CS 427/UnevenGround/UnevenGround/Assets/Materials/materals/EasyRoads3D/lib/EasyRoads3Dv3.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>C:/Users/jason/OneDrive/Desktop/Spring 2026/CS 427/UnevenGround/UnevenGround/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
  </Reference>
@@ -341,12 +347,6 @@
  </Reference>
  <Reference Include="UnityEditor.Purchasing">
  <HintPath>C:/Users/jason/OneDrive/Desktop/Spring 2026/CS 427/UnevenGround/UnevenGround/Library/PackageCache/com.unity.purchasing@2.0.6/Editor/UnityEditor.Purchasing.dll</HintPath>
- </Reference>
- <Reference Include="EasyRoads3Dv3">
- <HintPath>C:/Users/jason/OneDrive/Desktop/Spring 2026/CS 427/UnevenGround/UnevenGround/Assets/Materials/materals/EasyRoads3D/lib/EasyRoads3Dv3.dll</HintPath>
- </Reference>
- <Reference Include="EasyRoads3Dv3Editor">
- <HintPath>C:/Users/jason/OneDrive/Desktop/Spring 2026/CS 427/UnevenGround/UnevenGround/Assets/Materials/materals/EasyRoads3D/Editor/EasyRoads3Dv3Editor.dll</HintPath>
  </Reference>
  <Reference Include="nunit.framework">
  <HintPath>C:/Users/jason/OneDrive/Desktop/Spring 2026/CS 427/UnevenGround/UnevenGround/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
