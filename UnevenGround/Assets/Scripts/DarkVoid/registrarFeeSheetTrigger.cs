@@ -4,7 +4,8 @@ using System.Collections;
 
 public class registrarFeeSheetTrigger : MonoBehaviour
 {
-    public GameObject quad;              // assign your quad
+    public GameObject quad;   
+    public GameObject petitionQuad;          // assign your quad
     public Transform playerHead;         // assign VR camera (Main Camera)
     public float faceDistance = 1.2f;    // how far from face
     public float moveSpeed = 2f;
@@ -14,17 +15,22 @@ public class registrarFeeSheetTrigger : MonoBehaviour
     private bool isRunning = false;
     public TextMeshProUGUI feeText;
     public TextMeshProUGUI feeTitleText;
+    public CAVE2WandNavigator navigator;
+    
+    private bool hasPlayed = false;
+
 
     void Start()
     {
         originalPosition = quad.transform.position;
         originalRotation = quad.transform.rotation;
         quad.SetActive(false);
+        petitionQuad.SetActive(false);
     }
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player") && !isRunning)
+        if (other.CompareTag("Player") && !hasPlayed)
         {
             StartCoroutine(ShowSequence());
         }
@@ -33,6 +39,7 @@ public class registrarFeeSheetTrigger : MonoBehaviour
     IEnumerator ShowSequence()
     {
         isRunning = true;
+        navigator.DisableMovement();
 
         quad.SetActive(true);
 
@@ -68,9 +75,14 @@ public class registrarFeeSheetTrigger : MonoBehaviour
 
         // Step 4: Move back to desk
         yield return StartCoroutine(MoveQuad(originalPosition, originalRotation));
+        quad.SetActive(false);
 
-        isRunning = false;
+        hasPlayed = true;
+        navigator.EnableMovement();
+        petitionQuad.SetActive(true);
     }
+
+
 
     IEnumerator MoveQuad(Vector3 targetPos, Quaternion targetRot)
     {

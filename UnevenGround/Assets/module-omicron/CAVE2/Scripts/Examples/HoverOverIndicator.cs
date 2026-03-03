@@ -73,6 +73,7 @@ public class HoverOverIndicator : CAVE2Interactable
         hoverOverHighlight.transform.position = transform.position;
         hoverOverHighlight.transform.rotation = transform.rotation;
         hoverOverHighlight.transform.localScale = highlightScaler;
+        hoverOverHighlight.transform.localPosition = new Vector3(0, 0, -0.01f); // added this line for 427 project
 
         if (defaultMesh == null)
         {
