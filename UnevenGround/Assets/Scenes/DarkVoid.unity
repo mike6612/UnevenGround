@@ -10249,13 +10249,13 @@ MonoBehaviour:
   wandPointing: 0
   wandTouching: 0
   hasTriggered: 0
-  quad: {fileID: 0}
-  playerHead: {fileID: 0}
+  quad: {fileID: 1778441113}
+  playerHead: {fileID: 1723804250}
   faceDistance: 1.2
   moveSpeed: 2
-  navigator: {fileID: 0}
-  signatureText: {fileID: 0}
-  typographyObject: {fileID: 0}
+  navigator: {fileID: 1392511555}
+  signatureText: {fileID: 813637208}
+  typographyObject: {fileID: 1833066862}
 --- !u!82 &1778441120
 AudioSource:
   m_ObjectHideFlags: 0
