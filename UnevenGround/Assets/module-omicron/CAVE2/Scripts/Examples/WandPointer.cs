@@ -24,12 +24,13 @@
  * WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN 
  * ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *************************************************************************************************/
- 
+
 using UnityEngine;
-using System.Collections;
 
 public class WandPointer : MonoBehaviour
 {
+    private AudioSource currentFoodAudio;
+    [SerializeField] float foodFadeSpeed = 0.5f;
     public int wandID = 1;
 
     public bool laserActivated;
@@ -46,13 +47,24 @@ public class WandPointer : MonoBehaviour
     ParticleSystem laserParticle;
 
     public bool drawLaser = true;
-	public bool alwaysShowLaserParticle = false;
+    public bool alwaysShowLaserParticle = false;
     public LayerMask wandLayerMask = -1;
 
-	public CAVE2.Button laserButton = CAVE2.Button.Button3;
+    public CAVE2.Button laserButton = CAVE2.Button.Button3;
 
     public bool laserAlwaysOn = false;
     public bool laserButtonPressed;
+
+
+    void StopAudio()
+    {
+        if (currentFoodAudio != null && currentFoodAudio.isPlaying)
+        {
+            currentFoodAudio.Stop();
+            currentFoodAudio = null;
+        }
+    }
+
 
     // Use this for initialization
     void Start()
@@ -85,12 +97,12 @@ public class WandPointer : MonoBehaviour
         particleMain.startColor = new Color(Mathf.Max(laserColor.r, 0.2f) / 2.0f, Mathf.Max(laserColor.g, 0.2f) / 2.0f, Mathf.Max(laserColor.b, 0.2f) / 2.0f);
     }
 
-	// Update is called once per frame
+    // Update is called once per frame
     void Update()
     {
         //GetComponent<SphereCollider>().enabled = false; // Disable sphere collider for raycast
 
-		laserButtonPressed = CAVE2.Input.GetButton(wandID,laserButton);
+        laserButtonPressed = CAVE2.Input.GetButton(wandID, laserButton);
 
         bool drawLaserOverride = drawLaser;
 
@@ -126,6 +138,8 @@ public class WandPointer : MonoBehaviour
         wandHit = Physics.Raycast(ray, out hit, 100, wandLayerMask);
         Debug.DrawLine(ray.origin, hit.point); // Draws a line in the editor
 
+
+
         if (wandHit) // The wand is pointed at a collider
         {
             // Laser button is held down
@@ -137,8 +151,12 @@ public class WandPointer : MonoBehaviour
                 laserDistance = hit.distance;
                 laserPosition = hit.point;
             }
-			laserDistance = hit.distance;
-			laserPosition = hit.point;
+            else
+            {
+                StopAudio();
+            }
+            laserDistance = hit.distance;
+            laserPosition = hit.point;
         }
         else if (laserActivated)
         {
@@ -153,20 +171,59 @@ public class WandPointer : MonoBehaviour
         {
             if (wandHit && laserParticle)
             {
+                // If the laser hits an object with the tag "Food" fade it out overtime 
+                if (hit.collider.gameObject.CompareTag("Food"))
+                {
+                    AudioSource foodAudioSource = hit.collider.gameObject.GetComponent<AudioSource>();
+
+                    if (foodAudioSource && !foodAudioSource.isPlaying)
+                    {
+                        foodAudioSource.Play();
+                        currentFoodAudio = foodAudioSource;
+                    }
+                    Renderer[] renderers = hit.collider.GetComponentsInChildren<Renderer>();
+
+                    foreach (var r in renderers)
+                    {
+                        Color c = r.material.color;
+                        c.a -= foodFadeSpeed * Time.deltaTime;
+                        r.material.color = c;
+                        if (r.material.color.a <= 0)
+                        {
+                            // Destroy it when fully transparent
+                            Destroy(hit.collider.gameObject);
+                        }
+                    }
+                }
+                else
+                {
+                    StopAudio();
+                }
+
                 laserParticle.transform.position = laserPosition;
                 laserParticle.Emit(1);
             }
+            else
+            {
+                StopAudio();
+            }
+
+
             laser.SetPosition(1, new Vector3(0, 0, laserDistance));
         }
         else if (!drawLaserOverride)
         {
             laser.SetPosition(1, new Vector3(0, 0, 0));
         }
-		if( alwaysShowLaserParticle && !laserActivated && laserParticle)
-		{
-			laserParticle.transform.position = laserPosition;
-			laserParticle.Emit(1);
-		}
+        if (alwaysShowLaserParticle && !laserActivated && laserParticle)
+        {
+            laserParticle.transform.position = laserPosition;
+            laserParticle.Emit(1);
+        }
         //GetComponent<SphereCollider>().enabled = true; // Enable sphere collider after raycast
     }
+
+
+
 }
+
