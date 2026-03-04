@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI; // old
 using System.Collections;
 
 public class PaperClick : CAVE2Interactable
@@ -12,6 +13,9 @@ public class PaperClick : CAVE2Interactable
     private Vector3 originalPosition;
     private Quaternion originalRotation;
     public CAVE2WandNavigator navigator;
+    public Text signatureText;
+    private AudioSource penSigning;
+
 
 
     void Update()
@@ -22,7 +26,6 @@ public class PaperClick : CAVE2Interactable
     {
         originalPosition = quad.transform.position;
         originalRotation = quad.transform.rotation;
-        quad.SetActive(false);
     }
 
 
@@ -31,7 +34,7 @@ public class PaperClick : CAVE2Interactable
     {    
         Debug.Log("Button Pressed: " + evt.button);
 
-        if(evt.button == CAVE2.Button.Button1 && wandPointing && !hasPlayed)
+        if(evt.button == CAVE2.Button.Button3 && wandPointing && !hasPlayed)
         {
             StartCoroutine(ShowSequence());
         }
@@ -39,17 +42,34 @@ public class PaperClick : CAVE2Interactable
 
     IEnumerator ShowSequence()
     {
+        penSigning = quad.GetComponent<AudioSource>();
         navigator.DisableMovement();
         Vector3 facePosition = playerHead.position + playerHead.forward * faceDistance;
         Quaternion faceRotation = Quaternion.LookRotation(playerHead.forward);
 
         // Move paper in front of the player
         yield return StartCoroutine(MoveQuad(facePosition, faceRotation));
+        string text = "John Adams";
+        signatureText.text = ""; // clear before writing
 
-        // Show signature (could be TextMeshPro, texture, or sprite)
-        yield return new WaitForSeconds(5f);
+        penSigning.Play();
+        // Gradually "write" the signature
+        foreach (char c in text)
+        {
+            signatureText.text += c;
 
-        // Move back and hide
+
+            // Play pen sound here if you want
+            // AudioSource.PlayClipAtPoint(penSound, playerHead.position);
+
+            yield return new WaitForSeconds(0.2f); // adjust speed
+        }
+        penSigning.Stop();
+
+        yield return new WaitForSeconds(1f); // small pause at the end
+
+
+        // Move back 
         yield return StartCoroutine(MoveQuad(originalPosition, originalRotation));
         quad.SetActive(false);
 
