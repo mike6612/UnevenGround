@@ -4,7 +4,7 @@ using System.Collections;
 
 public class PaperClick : CAVE2Interactable
 {
-    public bool hasPlayed = false;
+    public bool hasTriggered = false;
     public GameObject quad;  
     
     public Transform playerHead;  
@@ -15,6 +15,8 @@ public class PaperClick : CAVE2Interactable
     public CAVE2WandNavigator navigator;
     public Text signatureText;
     private AudioSource penSigning;
+    public GameObject typographyObject;   // Assign in Inspector
+
 
 
 
@@ -34,12 +36,34 @@ public class PaperClick : CAVE2Interactable
     {    
         Debug.Log("Button Pressed: " + evt.button);
 
-        if(evt.button == CAVE2.Button.Button3 && wandPointing && !hasPlayed)
+        if(evt.button == CAVE2.Button.Button3 && wandPointing && !hasTriggered)
         {
             StartCoroutine(ShowSequence());
+            ShowTypography();
         }
     }
+    IEnumerator ShowTypography()
+        {
+            hasTriggered = true;
 
+            typographyObject.SetActive(true);
+
+            // Parent FIRST
+            typographyObject.transform.SetParent(playerHead);
+
+            // Reset transform RELATIVE to camera
+            typographyObject.transform.localPosition = new Vector3(1.64f, -3.15f, 11.5f);
+            
+
+            // Now scale it
+            typographyObject.transform.localScale = Vector3.one * 2f;
+
+            yield return new WaitForSeconds(10f);
+
+            // Unparent and hide
+            typographyObject.transform.SetParent(null);
+            typographyObject.SetActive(false);
+        }
     IEnumerator ShowSequence()
     {
         penSigning = quad.GetComponent<AudioSource>();
@@ -74,7 +98,7 @@ public class PaperClick : CAVE2Interactable
         quad.SetActive(false);
 
         navigator.EnableMovement();
-        hasPlayed = true;
+        hasTriggered = true;
     }
 
      IEnumerator MoveQuad(Vector3 targetPos, Quaternion targetRot){
