@@ -21,10 +21,14 @@ Thumbs.db
 *.swp
 *.swo
 
-# Visual Studio / Rider IDE (KEEP .csproj and .sln - needed for team)
+# Visual Studio / Rider IDE
 .vscode/
 .idea/
 *.userprefs
 *.user
 *.VC.db
 *.VC.VC.opendb
+
+*.csproj
+*.slnx
+*.sln

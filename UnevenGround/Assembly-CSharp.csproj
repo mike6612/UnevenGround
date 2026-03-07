@@ -215,6 +215,7 @@
      <None Include="Assets\Others\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
      <None Include="Assets\Imported Assets\MenuBoard\Doc\ReadMe.txt" />
      <None Include="Assets\Imported Assets\WoodsLifestyle\VERSION.txt" />
+     <None Include="Assets\Imported Assets\Room\Settings\Note.txt" />
      <None Include="Assets\module-omicron\Shaders\Transparent-InvisibleShadowCaster.shader" />
      <None Include="Assets\Imported Assets\Furniture\3d\Materials\Color Selection.shader" />
      <None Include="Assets\Others\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
