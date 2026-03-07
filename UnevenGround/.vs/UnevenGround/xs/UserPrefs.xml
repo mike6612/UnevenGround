@@ -1,0 +1,34 @@
+﻿<Properties StartupConfiguration="{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/DarkVoid/registrarIntroTrigger.cs">
+    <Files>
+      <File FileName="Assets/Scripts/DarkVoid/registrarIntroTrigger.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="UnevenGround" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="DarkVoid" expanded="True">
+                  <Node name="registrarIntroTrigger.cs" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="Unity" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="a9cd61d3-8d5d-4d72-9191-08e2411dbd8b" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
