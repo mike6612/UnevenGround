@@ -233,6 +233,7 @@
      <None Include="Assets\Others\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
      <None Include="Assets\Others\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
      <None Include="Assets\Others\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
+     <None Include="Assets\Imported Assets\QA_Books\Readme.txt" />
      <None Include="Assets\Imported Assets\Foliage Free\Readme.txt" />
      <None Include="Assets\Materials\materals\EasyRoads3D\shaders\EasyRoads3D - Unity 5 Standard.shader" />
      <None Include="Assets\Others\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
