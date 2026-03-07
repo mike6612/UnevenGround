@@ -29,7 +29,7 @@ using UnityEngine;
 
 public class WandPointer : MonoBehaviour
 {
-    private AudioSource currentFoodAudio;
+    private AudioSource currentAudio;
     [SerializeField] float foodFadeSpeed = 0.5f;
     public int wandID = 1;
 
@@ -55,13 +55,18 @@ public class WandPointer : MonoBehaviour
     public bool laserAlwaysOn = false;
     public bool laserButtonPressed;
 
+    private string currentHitTag = "";
 
     void StopAudio()
     {
-        if (currentFoodAudio != null && currentFoodAudio.isPlaying)
+        // Let register continue playing sound as it's more natural,
+        // only stop food eating sounds when not hitting food anymore
+        if (currentHitTag != "Food" || currentHitTag == "Register") { return; }
+
+        if (currentAudio != null && currentAudio.isPlaying)
         {
-            currentFoodAudio.Stop();
-            currentFoodAudio = null;
+            currentAudio.Stop();
+            currentAudio = null;
         }
     }
 
@@ -171,38 +176,33 @@ public class WandPointer : MonoBehaviour
         {
             if (wandHit && laserParticle)
             {
+                currentHitTag = hit.collider.gameObject.tag;
                 // If the laser hits an object with the tag "Food" fade it out overtime 
-                if (hit.collider.gameObject.CompareTag("Food"))
+                //if (hit.collider.gameObject.CompareTag("Food") || hit.collider.gameObject.CompareTag("Register"))
+                if (currentHitTag == "Food" || currentHitTag == "Register")
                 {
-                    AudioSource foodAudioSource = hit.collider.gameObject.GetComponent<AudioSource>();
+                    AudioSource audioSource = hit.collider.gameObject.GetComponent<AudioSource>();
 
-                    if (foodAudioSource && !foodAudioSource.isPlaying)
+                    if (audioSource && !audioSource.isPlaying)
                     {
-                        foodAudioSource.Play();
-                        currentFoodAudio = foodAudioSource;
+                        audioSource.Play();
+                        currentAudio = audioSource;
                     }
-                    Renderer[] renderers = hit.collider.GetComponentsInChildren<Renderer>();
 
-                    foreach (var r in renderers)
-                    {
-                        Color c = r.material.color;
-                        c.a -= foodFadeSpeed * Time.deltaTime;
-                        r.material.color = c;
-                        if (r.material.color.a <= 0)
-                        {
-                            // Destroy it when fully transparent
-                            Destroy(hit.collider.gameObject);
-                        }
-                    }
+                    ProcessFoodTransparent(hit);
+
                 }
+                // If the laser hits an object without the tag "Food" or "Register", stop any currently playing audio
                 else
                 {
                     StopAudio();
                 }
 
+
                 laserParticle.transform.position = laserPosition;
                 laserParticle.Emit(1);
             }
+            // If the laser is activated but not hitting anything, stop any currently playing audio
             else
             {
                 StopAudio();
@@ -223,7 +223,24 @@ public class WandPointer : MonoBehaviour
         //GetComponent<SphereCollider>().enabled = true; // Enable sphere collider after raycast
     }
 
-
-
+    private void ProcessFoodTransparent(RaycastHit hit)
+    {
+        if (currentHitTag == "Food")
+        {
+            // Get all renderers of the hit object and its children to fade them out
+            Renderer[] renderers = hit.collider.GetComponentsInChildren<Renderer>();
+            foreach (var r in renderers)
+            {
+                Color c = r.material.color;
+                c.a -= foodFadeSpeed * Time.deltaTime;
+                r.material.color = c;
+                if (r.material.color.a <= 0)
+                {
+                    // Destroy it when fully transparent
+                    Destroy(hit.collider.gameObject);
+                }
+            }
+        }
+    }
 }
 

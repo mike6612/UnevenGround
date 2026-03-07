@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|c:\\users\\jason\\onedrive\\desktop\\spring 2026\\cs 427\\unevenground\\unevenground\\assets\\module-omicron\\cave2\\scripts\\examples\\wandpointer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|solutionrelative:assets\\module-omicron\\cave2\\scripts\\examples\\wandpointer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:2:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|c:\\users\\jason\\onedrive\\desktop\\spring 2026\\cs 427\\unevenground\\unevenground\\assets\\module-omicron\\cave2\\scripts\\examples\\wandpointer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:2:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|solutionrelative:assets\\module-omicron\\cave2\\scripts\\examples\\wandpointer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|c:\\users\\jason\\onedrive\\desktop\\spring 2026\\cs 427\\unevenground\\unevenground\\assets\\module-omicron\\cave2\\scripts\\navigation\\cave2wandnavigator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\assets\\module-omicron\\cave2\\scripts\\navigation\\cave2wandnavigator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|solutionrelative:assets\\module-omicron\\cave2\\scripts\\navigation\\cave2wandnavigator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -19,7 +19,7 @@
       "RelativeMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\darkvoid\\increasemovespeed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|c:\\users\\jason\\onedrive\\desktop\\spring 2026\\cs 427\\unevenground\\unevenground\\assets\\scripts\\darkvoid\\triggerlamplighting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\assets\\scripts\\darkvoid\\triggerlamplighting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\darkvoid\\triggerlamplighting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -29,6 +29,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\module-omicron\\CAVE2\\Scripts\\Updaters\\CAVE2TransformSync.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|solutionrelative:Assets\\module-omicron\\CAVE2\\Scripts\\Updaters\\CAVE2TransformSync.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:1:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|c:\\users\\jason\\onedrive\\desktop\\spring 2026\\cs 427\\unevenground\\unevenground\\assets\\module-omicron\\cave2\\scripts\\examples\\wandpointer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:1:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|solutionrelative:assets\\module-omicron\\cave2\\scripts\\examples\\wandpointer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,8 +42,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WandPointer.cs",
+              "DocumentMoniker": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\module-omicron\\CAVE2\\Scripts\\Examples\\WandPointer.cs",
+              "RelativeDocumentMoniker": "Assets\\module-omicron\\CAVE2\\Scripts\\Examples\\WandPointer.cs",
+              "ToolTip": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\module-omicron\\CAVE2\\Scripts\\Examples\\WandPointer.cs",
+              "RelativeToolTip": "Assets\\module-omicron\\CAVE2\\Scripts\\Examples\\WandPointer.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAIA6wDgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-04T01:53:36.381Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Assets\\module-omicron\\CAVE2\\Scripts\\Examples\\WandPointer.cs",
+              "DocumentMoniker": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\module-omicron\\CAVE2\\Scripts\\Examples\\WandPointer.cs",
+              "RelativeDocumentMoniker": "Assets\\module-omicron\\CAVE2\\Scripts\\Examples\\WandPointer.cs",
+              "ToolTip": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\module-omicron\\CAVE2\\Scripts\\Examples\\WandPointer.cs",
+              "RelativeToolTip": "Assets\\module-omicron\\CAVE2\\Scripts\\Examples\\WandPointer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-07T21:00:07.009Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -50,21 +80,7 @@
               "RelativeToolTip": "Assets\\module-omicron\\CAVE2\\Scripts\\Navigation\\CAVE2WandNavigator.cs",
               "ViewState": "AgIAADgBAAAAAAAAAAA7wEcBAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-04T03:33:41.472Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "WandPointer.cs",
-              "DocumentMoniker": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\module-omicron\\CAVE2\\Scripts\\Examples\\WandPointer.cs",
-              "RelativeDocumentMoniker": "Assets\\module-omicron\\CAVE2\\Scripts\\Examples\\WandPointer.cs",
-              "ToolTip": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\module-omicron\\CAVE2\\Scripts\\Examples\\WandPointer.cs",
-              "RelativeToolTip": "Assets\\module-omicron\\CAVE2\\Scripts\\Examples\\WandPointer.cs",
-              "ViewState": "AgIAAKoAAAAAAAAAAAAYwLwAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-04T01:53:36.381Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-04T03:33:41.472Z"
             },
             {
               "$type": "Document",
@@ -76,8 +92,7 @@
               "RelativeToolTip": "Assets\\Scripts\\DarkVoid\\TriggerLampLighting.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-03T00:52:48.435Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-03T00:52:48.435Z"
             },
             {
               "$type": "Document",
@@ -113,8 +128,7 @@
               "RelativeToolTip": "Assets\\Scripts\\DarkVoid\\IncreaseMoveSpeed.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-02T23:25:33.245Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-02T23:25:33.245Z"
             },
             {
               "$type": "Document",
@@ -126,8 +140,7 @@
               "RelativeToolTip": "Assets\\Scripts\\HighSchoolScripts\\LoadNextScene.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-28T01:37:42.878Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-28T01:37:42.878Z"
             }
           ]
         }
