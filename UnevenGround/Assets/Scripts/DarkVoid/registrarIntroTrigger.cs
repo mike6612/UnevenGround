@@ -5,7 +5,8 @@ public class registrarIntroTrigger : MonoBehaviour
 {
     public GameObject typographyObject;   // Assign in Inspector
     public Transform playerHead;          // Assign XR Camera
-    public float displayTime = 30f;
+    public float displayTime = 5f;
+    public GameObject petitionQuad;
 
     private bool hasTriggered = false;
 
@@ -13,13 +14,14 @@ public class registrarIntroTrigger : MonoBehaviour
     {
         if(!hasTriggered && other.CompareTag("Player"))
         {
+            petitionQuad.SetActive(true);
             StartCoroutine(ShowTypography());
         }
     }
 
 IEnumerator ShowTypography()
     {
-        hasTriggered = true;
+        hasTriggered = true; 
 
         typographyObject.SetActive(true);
 
@@ -27,8 +29,16 @@ IEnumerator ShowTypography()
         typographyObject.transform.SetParent(playerHead);
 
         // Reset transform RELATIVE to camera
-        typographyObject.transform.localPosition = new Vector3(1.64f, -3.15f, 11.5f);
-        
+        typographyObject.transform.localPosition = new Vector3(0f, -3.79f, 14f);
+
+
+        typographyObject.transform.LookAt(playerHead);
+
+        Vector3 euler = typographyObject.transform.eulerAngles;
+        euler.x = 0f; // lock X
+        typographyObject.transform.eulerAngles = euler;
+
+
 
         // Now scale it
         typographyObject.transform.localScale = Vector3.one * 2f;

@@ -16,7 +16,15 @@ public class registrarFeeSheetTrigger : MonoBehaviour
     public TextMeshProUGUI feeText;
     public TextMeshProUGUI feeTitleText;
     public CAVE2WandNavigator navigator;
-    
+
+    public GameObject typographyObject_Emotion1;
+    public GameObject typographyObject_Emotion2;
+    public GameObject typographyObject_Emotion3;
+    public GameObject typographyObject_Emotion4;
+
+
+
+
     private bool hasPlayed = false;
 
 
@@ -78,8 +86,11 @@ public class registrarFeeSheetTrigger : MonoBehaviour
         quad.SetActive(false);
 
         hasPlayed = true;
-        navigator.EnableMovement();
         petitionQuad.SetActive(true);
+        yield return new WaitForSeconds(1.5f);
+        yield return StartCoroutine(ShowEmotionTypography());
+        navigator.EnableMovement();
+
     }
 
 
@@ -106,4 +117,71 @@ public class registrarFeeSheetTrigger : MonoBehaviour
         quad.transform.position = targetPos;
         quad.transform.rotation = targetRot;
     }
+
+    IEnumerator ShowEmotionTypography()
+    {
+        GameObject[] typographyObjects = { typographyObject_Emotion1, typographyObject_Emotion2, typographyObject_Emotion3, typographyObject_Emotion4 }; // assign your 3-4 objects here
+
+
+        typographyObject_Emotion1.SetActive(false);
+        typographyObject_Emotion2.SetActive(false);
+        typographyObject_Emotion3.SetActive(false);
+        typographyObject_Emotion4.SetActive(false);
+
+        // Parent FIRST
+        typographyObject_Emotion1.transform.SetParent(playerHead);
+        typographyObject_Emotion2.transform.SetParent(playerHead);
+        typographyObject_Emotion3.transform.SetParent(playerHead);
+        typographyObject_Emotion4.transform.SetParent(playerHead);
+
+
+
+
+        // Reset transform RELATIVE to camera
+        typographyObject_Emotion1.transform.localPosition = new Vector3(8.98f, -26.51f, 14.69f);
+        typographyObject_Emotion1.transform.localEulerAngles = new Vector3(0f, -180f, 0f);
+
+
+        typographyObject_Emotion2.transform.localPosition = new Vector3(-10.81f, -39.05f, 14.58f);
+        typographyObject_Emotion2.transform.localEulerAngles = new Vector3(0f, -180f, 0f);
+
+        typographyObject_Emotion3.transform.localPosition = new Vector3(12.85f, -4.31f, 14.62f);
+        typographyObject_Emotion3.transform.localEulerAngles = new Vector3(0f, -180f, 0f);
+
+        typographyObject_Emotion4.transform.localPosition = new Vector3(6.091f, -42f, 14.51f);
+        typographyObject_Emotion4.transform.localEulerAngles = new Vector3(0f, -180f, 0f);
+
+
+
+
+
+
+
+        // Now scale ii
+        typographyObject_Emotion1.transform.localScale = Vector3.one * 2f;
+        typographyObject_Emotion2.transform.localScale = Vector3.one * 2f;
+        typographyObject_Emotion3.transform.localScale = Vector3.one * 2f;
+        typographyObject_Emotion4.transform.localScale = Vector3.one * 2f;
+
+        foreach (GameObject obj in typographyObjects)
+        {
+            obj.SetActive(true);   // show the object
+            yield return new WaitForSeconds(1.2f);  // wait before next one
+            obj.SetActive(false);
+        }
+
+
+        // Unparent and hide
+        typographyObject_Emotion1.transform.SetParent(null);
+        typographyObject_Emotion2.transform.SetParent(null);
+        typographyObject_Emotion3.transform.SetParent(null);
+        typographyObject_Emotion4.transform.SetParent(null);
+
+
+        typographyObject_Emotion1.SetActive(false);
+        typographyObject_Emotion2.SetActive(false);
+        typographyObject_Emotion3.SetActive(false);
+        typographyObject_Emotion4.SetActive(false);
+    }
+
 }

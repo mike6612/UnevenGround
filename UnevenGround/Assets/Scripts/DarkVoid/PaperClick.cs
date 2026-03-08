@@ -9,7 +9,8 @@ public class PaperClick : CAVE2Interactable
     
     public Transform playerHead;  
     public float faceDistance = 1.2f;    // how far from face
-    public float moveSpeed = 2f; 
+    public float moveSpeed = 2f;
+    public float DeleteThis;
     private Vector3 originalPosition;
     private Quaternion originalRotation;
     public CAVE2WandNavigator navigator;
@@ -39,12 +40,12 @@ public class PaperClick : CAVE2Interactable
         if(evt.button == CAVE2.Button.Button3 && wandPointing && !hasTriggered)
         {
             StartCoroutine(ShowSequence());
-            ShowTypography();
         }
     }
     IEnumerator ShowTypography()
         {
             hasTriggered = true;
+
 
             typographyObject.SetActive(true);
 
@@ -53,10 +54,12 @@ public class PaperClick : CAVE2Interactable
 
             // Reset transform RELATIVE to camera
             typographyObject.transform.localPosition = new Vector3(1.64f, -3.15f, 11.5f);
-            
+            typographyObject.transform.localEulerAngles = new Vector3(0f, -180f, 0f);
 
-            // Now scale it
-            typographyObject.transform.localScale = Vector3.one * 2f;
+
+
+        // Now scale it
+        typographyObject.transform.localScale = Vector3.one * 2f;
 
             yield return new WaitForSeconds(10f);
 
@@ -95,6 +98,10 @@ public class PaperClick : CAVE2Interactable
 
         // Move back 
         yield return StartCoroutine(MoveQuad(originalPosition, originalRotation));
+
+        StartCoroutine(ShowTypography());
+        yield return new WaitForSeconds(3f);
+        typographyObject.SetActive(false);
         quad.SetActive(false);
 
         navigator.EnableMovement();
