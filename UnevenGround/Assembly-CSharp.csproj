@@ -219,6 +219,7 @@
      <Compile Include="Assets\Scripts\DarkVoid\PaperClick.cs" />
      <Compile Include="Assets\Scripts\DarkVoid\registrarFeeSheetTrigger.cs" />
      <Compile Include="Assets\Scripts\DarkVoid\registrarIntroTrigger.cs" />
+     <Compile Include="Assets\Scripts\DarkVoid\TriggerAppear.cs" />
      <Compile Include="Assets\Scripts\DarkVoid\TriggerLampLighting.cs" />
      <Compile Include="Assets\Scripts\HighSchoolScripts\LoadNextScene.cs" />
      <Compile Include="Assets\Scripts\HighSchoolScripts\TriggerElevatorAnimation.cs" />

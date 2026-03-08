@@ -31,6 +31,8 @@ public class WandPointer : MonoBehaviour
 {
     private AudioSource currentAudio;
     [SerializeField] float foodFadeSpeed = 0.5f;
+    [SerializeField] float donationBoxFadeSpeed = 0.5f;
+    bool shouldShowDonationBox = false;
     public int wandID = 1;
 
     public bool laserActivated;
@@ -56,6 +58,7 @@ public class WandPointer : MonoBehaviour
     public bool laserButtonPressed;
 
     private string currentHitTag = "";
+    private bool hasHitRegister;
 
     void StopAudio()
     {
@@ -182,11 +185,16 @@ public class WandPointer : MonoBehaviour
                 if (currentHitTag == "Food" || currentHitTag == "Register")
                 {
                     AudioSource audioSource = hit.collider.gameObject.GetComponent<AudioSource>();
-
                     if (audioSource && !audioSource.isPlaying)
                     {
                         audioSource.Play();
                         currentAudio = audioSource;
+                    }
+
+                    if (currentHitTag == "Register")
+                    {
+                        GameObject donationBox = GameObject.FindGameObjectWithTag("DonationBox");
+                        donationBox.GetComponent<TriggerAppear>().shouldAppear = true;
                     }
 
                     ProcessFoodTransparent(hit);
@@ -197,7 +205,6 @@ public class WandPointer : MonoBehaviour
                 {
                     StopAudio();
                 }
-
 
                 laserParticle.transform.position = laserPosition;
                 laserParticle.Emit(1);
@@ -225,22 +232,23 @@ public class WandPointer : MonoBehaviour
 
     private void ProcessFoodTransparent(RaycastHit hit)
     {
-        if (currentHitTag == "Food")
+        if (currentHitTag != "Food") { return; }
+        // Get all renderers of the hit object and its children to fade them out
+        Renderer[] renderers = hit.collider.GetComponentsInChildren<Renderer>();
+        foreach (var r in renderers)
         {
-            // Get all renderers of the hit object and its children to fade them out
-            Renderer[] renderers = hit.collider.GetComponentsInChildren<Renderer>();
-            foreach (var r in renderers)
+            Color c = r.material.color;
+            c.a -= foodFadeSpeed * Time.deltaTime;
+            r.material.color = c;
+            if (r.material.color.a <= 0)
             {
-                Color c = r.material.color;
-                c.a -= foodFadeSpeed * Time.deltaTime;
-                r.material.color = c;
-                if (r.material.color.a <= 0)
-                {
-                    // Destroy it when fully transparent
-                    Destroy(hit.collider.gameObject);
-                }
+                // Destroy it when fully transparent
+                Destroy(hit.collider.gameObject);
             }
         }
     }
+
+
+
 }
 
