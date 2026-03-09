@@ -4,16 +4,11 @@ public class TriggerAppear : MonoBehaviour
 {
     public bool shouldAppear = false;
     [SerializeField] float appearSpeed = 0.5f;
-    // Start is called before the first frame update
-    void Start()
-    {
+    bool hasTriggered = false;
 
-    }
-
-    // Update is called once per frame
     void Update()
     {
-        if (shouldAppear)
+        if (shouldAppear && !hasTriggered)
         {
             ProcessAppear();
         }
@@ -21,13 +16,20 @@ public class TriggerAppear : MonoBehaviour
 
     private void ProcessAppear()
     {
-        // Get all renderers of the hit object and its children to fade them out
-        Renderer meshRenderer = GetComponentInChildren<MeshRenderer>();
-        foreach (var m in meshRenderer.materials)
+        // Get all renderers of the hit object and its children to fade them out        Renderer[] meshRenderers = GetComponentsInChildren<MeshRenderer>();
+        foreach (var mr in meshRenderers)
         {
-            Color c = m.color;
-            c.a += appearSpeed * Time.deltaTime;
-            m.color = c;
+            foreach (var m in mr.materials)
+            {
+                Color c = m.color;
+                c.a += appearSpeed * Time.deltaTime;
+                m.color = c;
+
+                if (c.a >= 1f)
+                {
+                    hasTriggered = true;
+                }
+            }
         }
     }
 }

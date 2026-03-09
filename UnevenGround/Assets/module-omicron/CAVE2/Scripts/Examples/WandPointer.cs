@@ -182,7 +182,7 @@ public class WandPointer : MonoBehaviour
                 currentHitTag = hit.collider.gameObject.tag;
                 // If the laser hits an object with the tag "Food" fade it out overtime 
                 //if (hit.collider.gameObject.CompareTag("Food") || hit.collider.gameObject.CompareTag("Register"))
-                if (currentHitTag == "Food" || currentHitTag == "Register")
+                if (currentHitTag == "Food" || currentHitTag == "Register" || currentHitTag == "Book")
                 {
                     AudioSource audioSource = hit.collider.gameObject.GetComponent<AudioSource>();
                     if (audioSource && !audioSource.isPlaying)
@@ -197,7 +197,15 @@ public class WandPointer : MonoBehaviour
                         donationBox.GetComponent<TriggerAppear>().shouldAppear = true;
                     }
 
-                    ProcessFoodTransparent(hit);
+                    if (currentHitTag == "Book")
+                    {
+                        hit.collider.gameObject.GetComponent<TriggerDisappear>().shouldDisappear = true;
+                        //GameObject book = GameObject.FindGameObjectWithTag("Book");
+                        //book.GetComponent<TriggerDisappear>().shouldDisappear = true;
+                    }
+
+
+                    ProcessTransparent(hit);
 
                 }
                 // If the laser hits an object without the tag "Food" or "Register", stop any currently playing audio
@@ -230,9 +238,9 @@ public class WandPointer : MonoBehaviour
         //GetComponent<SphereCollider>().enabled = true; // Enable sphere collider after raycast
     }
 
-    private void ProcessFoodTransparent(RaycastHit hit)
+    private void ProcessTransparent(RaycastHit hit)
     {
-        if (currentHitTag != "Food") { return; }
+        if (currentHitTag != "Food" || currentHitTag != "Book") { return; }
         // Get all renderers of the hit object and its children to fade them out
         Renderer[] renderers = hit.collider.GetComponentsInChildren<Renderer>();
         foreach (var r in renderers)
@@ -247,8 +255,5 @@ public class WandPointer : MonoBehaviour
             }
         }
     }
-
-
-
 }
 
