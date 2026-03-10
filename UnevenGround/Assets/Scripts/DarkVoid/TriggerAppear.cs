@@ -16,7 +16,8 @@ public class TriggerAppear : MonoBehaviour
 
     private void ProcessAppear()
     {
-        // Get all renderers of the hit object and its children to fade them out        Renderer[] meshRenderers = GetComponentsInChildren<MeshRenderer>();
+        // Get all renderers of the hit object and its children to fade them out
+        Renderer[] meshRenderers = GetComponentsInChildren<MeshRenderer>();
         foreach (var mr in meshRenderers)
         {
             foreach (var m in mr.materials)

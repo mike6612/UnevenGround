@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/DarkVoid/StartMusicTrigger.cs">
+    <Files>
+      <File FileName="Assets/Scripts/DarkVoid/TriggerAppear.cs" Line="37" Column="1" />
+      <File FileName="Assets/Scripts/DarkVoid/StartMusicTrigger.cs" Line="14" Column="2" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="UnevenGround" expanded="True">
+            <Node name="Assets" expanded="True" selected="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="DarkVoid" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="ea064331-1e6a-46ea-b902-e086e762bd45" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
