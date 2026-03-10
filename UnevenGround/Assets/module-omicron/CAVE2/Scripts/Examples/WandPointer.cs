@@ -204,6 +204,8 @@ public class WandPointer : MonoBehaviour
                         //book.GetComponent<TriggerDisappear>().shouldDisappear = true;
                     }
 
+                    Debug.Log("Hit " + hit.collider.gameObject.name + " with tag " + currentHitTag);
+
 
                     ProcessTransparent(hit);
 
@@ -240,7 +242,10 @@ public class WandPointer : MonoBehaviour
 
     private void ProcessTransparent(RaycastHit hit)
     {
-        if (currentHitTag != "Food" || currentHitTag != "Book") { return; }
+        Debug.Log("Current hit tag: " + currentHitTag);
+        if (currentHitTag != "Food" || currentHitTag == "Book") { return; }
+        Debug.Log("Processing transparent for " + hit.collider.gameObject.name);
+
         // Get all renderers of the hit object and its children to fade them out
         Renderer[] renderers = hit.collider.GetComponentsInChildren<Renderer>();
         foreach (var r in renderers)
