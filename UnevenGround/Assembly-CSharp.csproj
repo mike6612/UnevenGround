@@ -224,6 +224,7 @@
      <Compile Include="Assets\Scripts\DarkVoid\TriggerDisappear.cs" />
      <Compile Include="Assets\Scripts\DarkVoid\TriggerLampLighting.cs" />
      <Compile Include="Assets\Scripts\HighSchoolScripts\LoadNextScene.cs" />
+     <Compile Include="Assets\Scripts\HighSchoolScripts\MoveTowardsPosition.cs" />
      <Compile Include="Assets\Scripts\HighSchoolScripts\TriggerElevatorAnimation.cs" />
      <Compile Include="Assets\Scripts\MusicManager.cs" />
      <None Include="Assets\Others\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
