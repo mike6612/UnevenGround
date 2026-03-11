@@ -33,7 +33,7 @@ public class registrarFeeSheetTrigger : MonoBehaviour
         originalPosition = quad.transform.position;
         originalRotation = quad.transform.rotation;
         quad.SetActive(false);
-        petitionQuad.SetActive(true);
+        petitionQuad.SetActive(false);
     }
 
     void OnTriggerEnter(Collider other)

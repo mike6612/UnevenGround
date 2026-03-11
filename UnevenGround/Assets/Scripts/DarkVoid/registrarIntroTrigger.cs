@@ -7,7 +7,6 @@ public class registrarIntroTrigger : MonoBehaviour
     public GameObject typographyObject;   // Assign in Inspector
     public Transform playerHead;          // Assign XR Camera
     public float displayTime = 5f;
-    public GameObject petitionQuad;
     public CAVE2WandNavigator navigator;
     public CAVE2InputManager inputManager;
     public bool disableTurning;
@@ -30,8 +29,7 @@ public class registrarIntroTrigger : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         if(!hasTriggered && other.CompareTag("Player"))
-        {
-            petitionQuad.SetActive(true);
+        { 
             StartCoroutine(ShowTypography());
         }
     }
