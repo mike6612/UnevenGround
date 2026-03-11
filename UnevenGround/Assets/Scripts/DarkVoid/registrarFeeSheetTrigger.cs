@@ -33,7 +33,7 @@ public class registrarFeeSheetTrigger : MonoBehaviour
         originalPosition = quad.transform.position;
         originalRotation = quad.transform.rotation;
         quad.SetActive(false);
-        petitionQuad.SetActive(false);
+        petitionQuad.SetActive(true);
     }
 
     void OnTriggerEnter(Collider other)
@@ -145,10 +145,10 @@ public class registrarFeeSheetTrigger : MonoBehaviour
         typographyObject_Emotion2.transform.localPosition = new Vector3(-10.81f, -39.05f, 14.58f);
         typographyObject_Emotion2.transform.localEulerAngles = new Vector3(0f, -180f, 0f);
 
-        typographyObject_Emotion3.transform.localPosition = new Vector3(12.85f, -4.31f, 14.62f);
+        typographyObject_Emotion3.transform.localPosition = new Vector3(14.6f, -42.85f, 14.62f);
         typographyObject_Emotion3.transform.localEulerAngles = new Vector3(0f, -180f, 0f);
 
-        typographyObject_Emotion4.transform.localPosition = new Vector3(6.091f, -42f, 14.51f);
+        typographyObject_Emotion4.transform.localPosition = new Vector3(5.15f, -5.26f, 14.51f);
         typographyObject_Emotion4.transform.localEulerAngles = new Vector3(0f, -180f, 0f);
 
 

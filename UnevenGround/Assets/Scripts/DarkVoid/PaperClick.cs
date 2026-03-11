@@ -53,15 +53,32 @@ public class PaperClick : CAVE2Interactable
             typographyObject.transform.SetParent(playerHead);
 
             // Reset transform RELATIVE to camera
-            typographyObject.transform.localPosition = new Vector3(1.64f, -3.15f, 11.5f);
+            typographyObject.transform.localPosition = new Vector3(0f, -3.15f, 15f);
             typographyObject.transform.localEulerAngles = new Vector3(0f, -180f, 0f);
 
 
+            Vector3 worldPos = typographyObject.transform.position;
+            worldPos.z += 4f;
+            typographyObject.transform.position = worldPos;
 
-        // Now scale it
-        typographyObject.transform.localScale = Vector3.one * 2f;
 
-            yield return new WaitForSeconds(10f);
+            // Now scale it
+            typographyObject.transform.localScale = Vector3.one * 2f;
+
+
+            float timer = 0f;
+            float speed = 0.5f;
+
+            while (timer < 30)
+            {
+                Vector3 pos = typographyObject.transform.position;
+                pos.z -= speed * Time.deltaTime; // move left
+                typographyObject.transform.position = pos;
+
+                timer += Time.deltaTime;
+                yield return null;
+            }
+
 
             // Unparent and hide
             typographyObject.transform.SetParent(null);
@@ -99,7 +116,7 @@ public class PaperClick : CAVE2Interactable
         // Move back 
         yield return StartCoroutine(MoveQuad(originalPosition, originalRotation));
 
-        StartCoroutine(ShowTypography());
+        yield return StartCoroutine(ShowTypography());
         yield return new WaitForSeconds(3f);
         typographyObject.SetActive(false);
         quad.SetActive(false);
