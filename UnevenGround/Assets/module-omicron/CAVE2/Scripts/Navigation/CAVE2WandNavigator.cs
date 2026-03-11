@@ -50,7 +50,7 @@ public class CAVE2WandNavigator : MonoBehaviour
     public float globalSpeedMod = 1.0f;
     public float movementScale = 5;
     [SerializeField] float flyMovementScale = 5;
-    [SerializeField] float turnSpeed = 20;
+    public float turnSpeed = 20;
 
     [SerializeField] bool smoothMovement = true;
     [SerializeField] float smoothMovementTime = 0.5f;
@@ -111,7 +111,7 @@ public class CAVE2WandNavigator : MonoBehaviour
         transform.rotation = initialRotation;
         navMode = initMode;
     }
-  
+
 
     public void DisableMovement()
     {
@@ -328,7 +328,7 @@ public class CAVE2WandNavigator : MonoBehaviour
         {
             forwardAngle = CAVE2.GetWandObject(wandID).transform.eulerAngles.y;
         }
-        if (horizontalMovementMode == HorizonalMovementMode.Strafe )
+        if (horizontalMovementMode == HorizonalMovementMode.Strafe)
         {
             nextPos.z += forward * Time.deltaTime * Mathf.Cos(Mathf.Deg2Rad * forwardAngle) * (smoothMovement ? movementScale * 20 : movementScale);
             nextPos.x += forward * Time.deltaTime * Mathf.Sin(Mathf.Deg2Rad * forwardAngle) * (smoothMovement ? movementScale * 20 : movementScale);
@@ -347,7 +347,7 @@ public class CAVE2WandNavigator : MonoBehaviour
 
             transform.Rotate(new Vector3(lookAround.x, lookAround.y, 0) * Time.deltaTime * turnSpeed);
         }
-        else if (horizontalMovementMode == HorizonalMovementMode.Turn )
+        else if (horizontalMovementMode == HorizonalMovementMode.Turn)
         {
             nextPos.z += forward * Time.deltaTime * Mathf.Cos(Mathf.Deg2Rad * forwardAngle) * (smoothMovement ? movementScale * 20 : movementScale);
             nextPos.x += forward * Time.deltaTime * Mathf.Sin(Mathf.Deg2Rad * forwardAngle) * (smoothMovement ? movementScale * 20 : movementScale);
