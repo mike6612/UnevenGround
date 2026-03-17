@@ -17,10 +17,17 @@ public class registrarFeeSheetTrigger : MonoBehaviour
     public TextMeshProUGUI feeTitleText;
     public CAVE2WandNavigator navigator;
 
+    public GameObject HowDiagonal;
+
+    //public GameObject HowVertical;
+    //public GameObject HowHorizontal;
+
     public GameObject typographyObject_Emotion1;
     public GameObject typographyObject_Emotion2;
     public GameObject typographyObject_Emotion3;
     public GameObject typographyObject_Emotion4;
+
+
 
 
 
@@ -117,10 +124,26 @@ public class registrarFeeSheetTrigger : MonoBehaviour
         quad.transform.position = targetPos;
         quad.transform.rotation = targetRot;
     }
+  
 
     IEnumerator ShowEmotionTypography()
     {
-        GameObject[] typographyObjects = { typographyObject_Emotion1, typographyObject_Emotion2, typographyObject_Emotion3, typographyObject_Emotion4 }; // assign your 3-4 objects here
+
+        HowDiagonal.SetActive(false);
+        //HowHorizontal.SetActive(false);
+        //HowVertical.SetActive(false);
+
+
+        HowDiagonal.SetActive(true);
+
+
+        yield return new WaitForSeconds(5f);  // wait before next one
+        HowDiagonal.SetActive(false);
+
+
+
+
+        GameObject[] typographyObjects = { typographyObject_Emotion1, typographyObject_Emotion2, typographyObject_Emotion3 }; // assign your 3-4 objects here
 
 
         typographyObject_Emotion1.SetActive(false);

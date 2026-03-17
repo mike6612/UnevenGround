@@ -69,7 +69,7 @@ public class PaperClick : CAVE2Interactable
             float timer = 0f;
             float speed = 0.5f;
 
-            while (timer < 30)
+            while (timer < 16)
             {
                 Vector3 pos = typographyObject.transform.position;
                 pos.z -= speed * Time.deltaTime; // move left
