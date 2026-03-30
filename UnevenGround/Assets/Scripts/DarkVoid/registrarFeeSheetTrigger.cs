@@ -155,7 +155,7 @@ public class registrarFeeSheetTrigger : MonoBehaviour
         typographyObject_Emotion1.transform.SetParent(playerHead);
         typographyObject_Emotion2.transform.SetParent(playerHead);
         typographyObject_Emotion3.transform.SetParent(playerHead);
-        typographyObject_Emotion4.transform.SetParent(playerHead);
+        //typographyObject_Emotion4.transform.SetParent(playerHead);
 
 
 
@@ -171,8 +171,8 @@ public class registrarFeeSheetTrigger : MonoBehaviour
         typographyObject_Emotion3.transform.localPosition = new Vector3(14.6f, -42.85f, 14.62f);
         typographyObject_Emotion3.transform.localEulerAngles = new Vector3(0f, -180f, 0f);
 
-        typographyObject_Emotion4.transform.localPosition = new Vector3(5.15f, -5.26f, 14.51f);
-        typographyObject_Emotion4.transform.localEulerAngles = new Vector3(0f, -180f, 0f);
+        //typographyObject_Emotion4.transform.localPosition = new Vector3(5.15f, -5.26f, 14.51f);
+        //typographyObject_Emotion4.transform.localEulerAngles = new Vector3(0f, -180f, 0f);
 
 
 
@@ -184,7 +184,7 @@ public class registrarFeeSheetTrigger : MonoBehaviour
         typographyObject_Emotion1.transform.localScale = Vector3.one * 2f;
         typographyObject_Emotion2.transform.localScale = Vector3.one * 2f;
         typographyObject_Emotion3.transform.localScale = Vector3.one * 2f;
-        typographyObject_Emotion4.transform.localScale = Vector3.one * 2f;
+        //typographyObject_Emotion4.transform.localScale = Vector3.one * 2f;
 
         foreach (GameObject obj in typographyObjects)
         {
@@ -198,13 +198,13 @@ public class registrarFeeSheetTrigger : MonoBehaviour
         typographyObject_Emotion1.transform.SetParent(null);
         typographyObject_Emotion2.transform.SetParent(null);
         typographyObject_Emotion3.transform.SetParent(null);
-        typographyObject_Emotion4.transform.SetParent(null);
+        //typographyObject_Emotion4.transform.SetParent(null);
 
 
         typographyObject_Emotion1.SetActive(false);
         typographyObject_Emotion2.SetActive(false);
         typographyObject_Emotion3.SetActive(false);
-        typographyObject_Emotion4.SetActive(false);
+        //typographyObject_Emotion4.SetActive(false);
     }
 
 }
