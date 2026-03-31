@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI; // old
 using System.Collections;
+using UnityEngine.Rendering;
 
 public class PaperClick : CAVE2Interactable
 {
@@ -42,52 +43,47 @@ public class PaperClick : CAVE2Interactable
             StartCoroutine(ShowSequence());
         }
     }
-    IEnumerator ShowTypography()
+    IEnumerator ShowTypography(float originalSpeed, float originalMovementScale)
         {
             hasTriggered = true;
 
 
             typographyObject.SetActive(true);
 
-            // Parent FIRST
-            typographyObject.transform.SetParent(playerHead);
+        // Parent FIRST
+        //typographyObject.transform.SetParent(playerHead);
 
-            // Reset transform RELATIVE to camera
-            typographyObject.transform.localPosition = new Vector3(0f, -3.15f, 15f);
-            typographyObject.transform.localEulerAngles = new Vector3(0f, -180f, 0f);
-
-
-            Vector3 worldPos = typographyObject.transform.position;
-            worldPos.z += 4f;
-            typographyObject.transform.position = worldPos;
+        // Reset transform RELATIVE to camera
+        //typographyObject.transform.localPosition = new Vector3(0f, -3.15f, 15f);
+        //typographyObject.transform.localEulerAngles = new Vector3(0f, -180f, 0f);
 
 
-            // Now scale it
-            typographyObject.transform.localScale = Vector3.one * 2f;
+        //Vector3 worldPos = typographyObject.transform.position;
+        //worldPos.z += 4f;
+        //typographyObject.transform.position = worldPos;
 
 
-            float timer = 0f;
-            float speed = 0.5f;
-
-            while (timer < 16)
-            {
-                Vector3 pos = typographyObject.transform.position;
-                pos.z -= speed * Time.deltaTime; // move left
-                typographyObject.transform.position = pos;
-
-                timer += Time.deltaTime;
-                yield return null;
-            }
+        // Now scale it
+        //typographyObject.transform.localScale = Vector3.one * 2f;
 
 
-            // Unparent and hide
-            typographyObject.transform.SetParent(null);
+
+            yield return new WaitForSeconds(5f); 
+      
+
             typographyObject.SetActive(false);
-        }
+ 
+      
+    }
     IEnumerator ShowSequence()
     {
         penSigning = quad.GetComponent<AudioSource>();
-        navigator.DisableMovement();
+        float originalTurnSpeed = navigator.turnSpeed;
+        float originalMovementScale = navigator.movementScale;
+
+        navigator.turnSpeed = 0f;
+        navigator.movementScale = 0f;
+
         Vector3 facePosition = playerHead.position + playerHead.forward * faceDistance;
         Quaternion faceRotation = Quaternion.LookRotation(playerHead.forward);
 
@@ -116,12 +112,13 @@ public class PaperClick : CAVE2Interactable
         // Move back 
         yield return StartCoroutine(MoveQuad(originalPosition, originalRotation));
 
-        yield return StartCoroutine(ShowTypography());
-        yield return new WaitForSeconds(3f);
-        typographyObject.SetActive(false);
+        yield return StartCoroutine(ShowTypography(originalTurnSpeed, originalMovementScale));
+        yield return new WaitForSeconds(5f);
+        navigator.turnSpeed = originalTurnSpeed;
+        navigator.movementScale = originalMovementScale;
+
         quad.SetActive(false);
 
-        navigator.EnableMovement();
         hasTriggered = true;
     }
 

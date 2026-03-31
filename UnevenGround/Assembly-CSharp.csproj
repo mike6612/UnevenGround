@@ -248,10 +248,8 @@
      <None Include="Assets\Others\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
      <None Include="Assets\module-omicron\Shaders\3D Text (Billboard).shader" />
      <None Include="Assets\Imported Assets\LowPolyOfficeProps_LITE\About.txt" />
-     <None Include="Assets\Materials\materals\EasyRoads3D\shaders\EasyRoads3D-Surface-Offset.shader" />
      <None Include="Assets\module-omicron\CAVE2\Examples\Generalized Perspective Projection\Shaders\StereoscopicShader.shader" />
      <None Include="Assets\module-omicron\Shaders\Transparent-Self-Illumin.shader" />
-     <None Include="Assets\Imported Assets\EasyRoads3D scenes\KajamansRoads\FileNamesDescription.txt" />
      <None Include="Assets\module-omicron\CAVE2\Shaders\CAVE2-UI Default Font.shader" />
      <None Include="Assets\Imported Assets\WoodsLifestyle\NOTES.txt" />
      <None Include="Assets\Others\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
@@ -259,31 +257,20 @@
      <None Include="Assets\Others\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
      <None Include="Assets\Imported Assets\QA_Books\Readme.txt" />
      <None Include="Assets\Imported Assets\Foliage Free\Readme.txt" />
-     <None Include="Assets\Materials\materals\EasyRoads3D\shaders\EasyRoads3D - Unity 5 Standard.shader" />
      <None Include="Assets\Others\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
-     <None Include="Assets\Materials\materals\EasyRoads3D\shaders\EasyRoads3D - Unity 5 StandardSpecular.shader" />
-     <None Include="Assets\Materials\materals\EasyRoads3D\prefab meshes\_custom prefabs.txt" />
-     <None Include="Assets\Imported Assets\EasyRoads3D scenes\KajamansRoads\Free\ReadMe.txt" />
      <None Include="Assets\module-omicron\Shaders\Font (Billboard).shader" />
      <None Include="Assets\Others\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
-     <None Include="Assets\Materials\materals\EasyRoads3D\_readme .txt" />
      <None Include="Assets\Others\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
      <None Include="Assets\Others\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
      <None Include="Assets\Others\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\ADI\Voxel Office Props\Read Me.txt" />
      <None Include="Assets\Materials\PBS Materials Variety Pack\readme.txt" />
      <None Include="Assets\Others\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
-     <None Include="Assets\Materials\materals\EasyRoads3D\prefab sources\_custom prefabs.txt" />
      <None Include="Assets\Others\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
      <None Include="Assets\Imported Assets\MenuBoard\Doc\ChangeLogs.txt" />
-     <None Include="Assets\Materials\materals\EasyRoads3D\_Release Notes.txt" />
-     <None Include="Assets\Materials\materals\EasyRoads3D\Resources\dynamic prefabs\dynamic prefabs.txt" />
-     <None Include="Assets\Materials\materals\EasyRoads3D\Resources\custom prefabs\_custom prefabs.txt" />
      <None Include="Assets\Others\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
-     <None Include="Assets\Materials\materals\EasyRoads3D\shaders\EasyRoads3D - Unity Standard 2018.shader" />
      <None Include="Assets\module-omicron\CAVE2\Shaders\CAVE2ScreenMaskShader.shader" />
      <None Include="Assets\Others\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
-     <None Include="Assets\Materials\materals\EasyRoads3D\shaders\EasyRoads3D-Road-Edit-Mode.shader" />
      <None Include="Assets\Others\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
      <None Include="Assets\Others\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
      <None Include="Assets\Imported Assets\FoodAndGrocery\Info.txt" />
@@ -535,9 +522,6 @@
  </Reference>
  <Reference Include="UnityEngine.XRModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
- </Reference>
- <Reference Include="EasyRoads3Dv3">
- <HintPath>C:/Users/ricar/UnevenGround/UnevenGround/Assets/Materials/materals/EasyRoads3D/lib/EasyRoads3Dv3.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Editor">
  <HintPath>C:/Users/ricar/UnevenGround/UnevenGround/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>

@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\ricar\\UnevenGround\\UnevenGround\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|c:\\users\\ricar\\unevenground\\unevenground\\assets\\scripts\\darkvoid\\registrarfeesheettrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\darkvoid\\registrarfeesheettrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|c:\\users\\ricar\\unevenground\\unevenground\\assets\\scripts\\darkvoid\\paperclick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\darkvoid\\paperclick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ricar\\UnevenGround\\UnevenGround\\Assets\\Scripts\\DarkVoid\\StomachGrowl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\DarkVoid\\StomachGrowl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|c:\\users\\ricar\\unevenground\\unevenground\\assets\\scripts\\darkvoid\\registrarintrotrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\darkvoid\\registrarintrotrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|C:\\Users\\ricar\\UnevenGround\\UnevenGround\\Assets\\Scripts\\DarkVoid\\StomachGrowl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|solutionrelative:Assets\\Scripts\\DarkVoid\\StomachGrowl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:1:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|c:\\users\\ricar\\unevenground\\unevenground\\assets\\scripts\\darkvoid\\registrarfeesheettrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:1:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\darkvoid\\registrarfeesheettrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:2:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|c:\\users\\ricar\\unevenground\\unevenground\\assets\\scripts\\darkvoid\\registrarfeesheettrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:2:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\darkvoid\\registrarfeesheettrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +30,72 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "registrarIntroTrigger.cs",
+              "DocumentMoniker": "C:\\Users\\ricar\\UnevenGround\\UnevenGround\\Assets\\Scripts\\DarkVoid\\registrarIntroTrigger.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\DarkVoid\\registrarIntroTrigger.cs",
+              "ToolTip": "C:\\Users\\ricar\\UnevenGround\\UnevenGround\\Assets\\Scripts\\DarkVoid\\registrarIntroTrigger.cs",
+              "RelativeToolTip": "Assets\\Scripts\\DarkVoid\\registrarIntroTrigger.cs",
+              "ViewState": "AgIAABAAAACAXmZmZuYjwBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-31T08:33:07.041Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "PaperClick.cs",
+              "DocumentMoniker": "C:\\Users\\ricar\\UnevenGround\\UnevenGround\\Assets\\Scripts\\DarkVoid\\PaperClick.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\DarkVoid\\PaperClick.cs",
+              "ToolTip": "C:\\Users\\ricar\\UnevenGround\\UnevenGround\\Assets\\Scripts\\DarkVoid\\PaperClick.cs",
+              "RelativeToolTip": "Assets\\Scripts\\DarkVoid\\PaperClick.cs",
+              "ViewState": "AgIAACwAAABAy8zMzMwlwEYAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-31T09:02:32.008Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StomachGrowl.cs",
+              "DocumentMoniker": "C:\\Users\\ricar\\UnevenGround\\UnevenGround\\Assets\\Scripts\\DarkVoid\\StomachGrowl.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\DarkVoid\\StomachGrowl.cs",
+              "ToolTip": "C:\\Users\\ricar\\UnevenGround\\UnevenGround\\Assets\\Scripts\\DarkVoid\\StomachGrowl.cs",
+              "RelativeToolTip": "Assets\\Scripts\\DarkVoid\\StomachGrowl.cs",
+              "ViewState": "AgIAABIAAABglpmZmZkuwBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T14:27:13.956Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "registrarFeeSheetTrigger.cs",
               "DocumentMoniker": "C:\\Users\\ricar\\UnevenGround\\UnevenGround\\Assets\\Scripts\\DarkVoid\\registrarFeeSheetTrigger.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\DarkVoid\\registrarFeeSheetTrigger.cs",
               "ToolTip": "C:\\Users\\ricar\\UnevenGround\\UnevenGround\\Assets\\Scripts\\DarkVoid\\registrarFeeSheetTrigger.cs",
               "RelativeToolTip": "Assets\\Scripts\\DarkVoid\\registrarFeeSheetTrigger.cs",
-              "ViewState": "AgIAAIoAAAAAyszMzMwkwDUAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAACsAAAAAzszMzOwwwDoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-30T14:59:12.322Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "StomachGrowl.cs",
-              "DocumentMoniker": "C:\\Users\\ricar\\UnevenGround\\UnevenGround\\Assets\\Scripts\\DarkVoid\\StomachGrowl.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\DarkVoid\\StomachGrowl.cs",
-              "ToolTip": "C:\\Users\\ricar\\UnevenGround\\UnevenGround\\Assets\\Scripts\\DarkVoid\\StomachGrowl.cs",
-              "RelativeToolTip": "Assets\\Scripts\\DarkVoid\\StomachGrowl.cs",
-              "ViewState": "AgIAAAAAAACgZmZmZmYkwBQAAAAdAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Assets\\Scripts\\DarkVoid\\registrarFeeSheetTrigger.cs",
+              "DocumentMoniker": "C:\\Users\\ricar\\UnevenGround\\UnevenGround\\Assets\\Scripts\\DarkVoid\\registrarFeeSheetTrigger.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\DarkVoid\\registrarFeeSheetTrigger.cs",
+              "ToolTip": "C:\\Users\\ricar\\UnevenGround\\UnevenGround\\Assets\\Scripts\\DarkVoid\\registrarFeeSheetTrigger.cs",
+              "RelativeToolTip": "Assets\\Scripts\\DarkVoid\\registrarFeeSheetTrigger.cs",
+              "ViewState": "AgIAAEwAAAAAYGZmZuYYwGgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-30T14:27:13.956Z",
+              "WhenOpened": "2026-03-31T06:44:39.985Z",
               "EditorCaption": ""
             }
           ]
