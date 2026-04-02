@@ -8,6 +8,8 @@ TagManager:
   - Food
   - Register
   - DonationBox
+  - Book
+  - ElevatorButtons
   layers:
   - Default
   - TransparentFX

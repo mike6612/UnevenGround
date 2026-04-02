@@ -29,6 +29,8 @@ using UnityEngine;
 
 public class CAVE2WandNavigator : MonoBehaviour
 {
+    // Audio
+    AudioSource walkingAudioSource;
 
     [Header("Input")]
     [SerializeField] int headID = 1;
@@ -148,6 +150,8 @@ public class CAVE2WandNavigator : MonoBehaviour
             DisableMovement();
             lastNavMode = NavigationMode.Walk;
         }
+
+        walkingAudioSource = GetComponent<AudioSource>();
     }
 
     void FixedUpdate()
@@ -185,6 +189,19 @@ public class CAVE2WandNavigator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (forward != 0 || strafe != 0)
+        {
+            if (!walkingAudioSource.isPlaying)
+            {
+                walkingAudioSource.time = 1.2f;
+                walkingAudioSource.Play();
+            }
+        }
+        else
+        {
+            walkingAudioSource.Stop();
+        }
+
         float speedMod = 1;
         if (walkUsesFlyGlobalSpeedScale)
         {

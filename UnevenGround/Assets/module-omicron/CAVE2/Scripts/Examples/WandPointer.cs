@@ -180,9 +180,10 @@ public class WandPointer : MonoBehaviour
             if (wandHit && laserParticle)
             {
                 currentHitTag = hit.collider.gameObject.tag;
+
                 // If the laser hits an object with the tag "Food" fade it out overtime 
                 //if (hit.collider.gameObject.CompareTag("Food") || hit.collider.gameObject.CompareTag("Register"))
-                if (currentHitTag == "Food" || currentHitTag == "Register" || currentHitTag == "Book")
+                if (currentHitTag == "Food" || currentHitTag == "Register" || currentHitTag == "Book" /*|| currentHitTag == "ElevatorButtons"*/)
                 {
                     AudioSource audioSource = hit.collider.gameObject.GetComponent<AudioSource>();
                     if (audioSource && !audioSource.isPlaying)
@@ -204,7 +205,13 @@ public class WandPointer : MonoBehaviour
                         //book.GetComponent<TriggerDisappear>().shouldDisappear = true;
                     }
 
-                    Debug.Log("Hit " + hit.collider.gameObject.name + " with tag " + currentHitTag);
+                    // Elevator button laser interaction, not used (?)
+                    //if (currentHitTag == "ElevatorButtons")
+                    //{
+                    //    hit.collider.gameObject.GetComponentInParent<TriggerElevatorAnimation>().shouldPlay = true;
+                    //    Debug.Log("Hit elevator buttons");
+                    //}
+                    //Debug.Log("Hit " + hit.collider.gameObject.name + " with tag " + currentHitTag);
 
 
                     ProcessTransparent(hit);
