@@ -225,6 +225,7 @@
     <Compile Include="Assets\module-omicron\Tests\Mocap\OmicronMocapObject.cs" />
     <Compile Include="Assets\module-omicron\Tests\Touch\SimpleCanvasTouch.cs" />
     <Compile Include="Assets\Scripts\DarkVoid\CityAmbienceStop.cs" />
+    <Compile Include="Assets\Scripts\DarkVoid\HeavyBreathing.cs" />
     <Compile Include="Assets\Scripts\DarkVoid\IncreaseMoveSpeed.cs" />
     <Compile Include="Assets\Scripts\DarkVoid\IntroSentencePulse.cs" />
     <Compile Include="Assets\Scripts\DarkVoid\LightTurnOnTrigger.cs" />
@@ -241,6 +242,7 @@
     <Compile Include="Assets\Scripts\DarkVoid\TriggerAppear.cs" />
     <Compile Include="Assets\Scripts\DarkVoid\TriggerDisappear.cs" />
     <Compile Include="Assets\Scripts\DarkVoid\TriggerLampLighting.cs" />
+    <Compile Include="Assets\Scripts\DarkVoid\WindAudio.cs" />
     <Compile Include="Assets\Scripts\HighSchoolScripts\LoadNextScene.cs" />
     <Compile Include="Assets\Scripts\HighSchoolScripts\MoveTowardsPosition.cs" />
     <Compile Include="Assets\Scripts\HighSchoolScripts\TriggerElevatorAnimation.cs" />
