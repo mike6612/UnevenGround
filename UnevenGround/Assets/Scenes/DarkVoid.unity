@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0061699147, g: 0.0061699147, b: 0.0061699147, a: 1}
+  m_IndirectSpecularColor: {r: 0.00616991, g: 0.00616991, b: 0.00616991, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -23589,6 +23589,33 @@ PrefabInstance:
     - target: {fileID: 4000011905374418, guid: a4112b265405f1746888da82876328fc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012939853620, guid: a4112b265405f1746888da82876328fc,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Catherine Carter
+
+        Michael Jaimes
+
+        Kang Fan
+
+        Jai Batra
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013457600848, guid: a4112b265405f1746888da82876328fc,
+        type: 3}
+      propertyPath: m_Text
+      value: Beyond Barriers
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012569301038, guid: a4112b265405f1746888da82876328fc,
+        type: 3}
+      propertyPath: m_Text
+      value: 'CS 427 - Creative Coding
+
+        Spring 2026
+
+        University of Illinois at Chicago'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a4112b265405f1746888da82876328fc, type: 3}
