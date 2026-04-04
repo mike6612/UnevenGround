@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DarkVoid.unity
     guid: df989589bbc50304e87ca8bf95b34f9f
+  - enabled: 1
+    path: Assets/Scenes/Final.unity
+    guid: 4118ba1c69e9cb645b69e15f0f96e43c
   m_configObjects: {}
