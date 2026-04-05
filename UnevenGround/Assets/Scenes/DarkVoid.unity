@@ -7988,7 +7988,6 @@ GameObject:
   - component: {fileID: 446005597}
   - component: {fileID: 446005596}
   - component: {fileID: 446005595}
-  - component: {fileID: 446005599}
   m_Layer: 0
   m_Name: BookStorePortalExit
   m_TagString: Untagged
@@ -8033,7 +8032,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 446005593}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -8084,18 +8083,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 446005593}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &446005599
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 446005593}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a560d71fc1fbf16459f31e34f2418e90, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &448106178
 GameObject:
   m_ObjectHideFlags: 0
@@ -31685,6 +31672,7 @@ GameObject:
   - component: {fileID: 1625340647}
   - component: {fileID: 1625340646}
   - component: {fileID: 1625340645}
+  - component: {fileID: 1625340649}
   m_Layer: 0
   m_Name: GlowLayer (3)
   m_TagString: Untagged
@@ -31765,6 +31753,18 @@ Transform:
   m_Father: {fileID: 1938939283}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!114 &1625340649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1625340644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a560d71fc1fbf16459f31e34f2418e90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1630142452
 GameObject:
   m_ObjectHideFlags: 0
