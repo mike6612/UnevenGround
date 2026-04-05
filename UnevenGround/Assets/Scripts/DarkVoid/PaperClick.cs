@@ -1,7 +1,8 @@
-﻿using UnityEngine;
-using UnityEngine.UI; // old
+﻿using System;
 using System.Collections;
+using UnityEngine;
 using UnityEngine.Rendering;
+using UnityEngine.UI; // old
 
 public class PaperClick : CAVE2Interactable
 {
@@ -16,20 +17,77 @@ public class PaperClick : CAVE2Interactable
     private Quaternion originalRotation;
     public CAVE2WandNavigator navigator;
     public Text signatureText;
-    private AudioSource penSigning;
+    private AudioSource audioSource;
+
+    public AudioClip penSigning;
+    public AudioClip paperSound;
+    public AudioClip hmmSound;
+
+
     public GameObject typographyObject;   // Assign in Inspector
 
 
 
+    private Material mat;
+    public Renderer targetRenderer;
+    public Color originalColor;
 
+
+    public Color glowColor = Color.blue;
+    public float intensity = 3f;
+    public float pulseDuration = 1f; // time in seconds for one pulse phase
+    private float timer = 0f;
+    private bool glowing = false;
+
+    public Transform target;         // assign VR camera (Main Camera)
+
+
+    public GameObject leaveRegistrarPortal;
     void Update()
     {
-        UpdateWandOverTimer();
-    }
+
+
+        timer += Time.deltaTime;
+
+        if (!hasTriggered)
+        {
+            if (timer >= pulseDuration)
+            {
+                timer = 0f;
+                glowing = !glowing; // toggle state
+            }
+
+            if (glowing)
+            {
+                // glowing state: black base + blue emission
+                mat.color = Color.black;
+                mat.SetColor("_EmissionColor", glowColor * intensity);
+            }
+            else
+            {
+                // normal state: white base, no emission
+                mat.color = Color.white;
+                mat.SetColor("_EmissionColor", Color.black);
+            }
+        }
+
+      }
+
+
+
+
     void Start()
     {
         originalPosition = quad.transform.position;
         originalRotation = quad.transform.rotation;
+
+        mat = targetRenderer.material;
+        mat.EnableKeyword("_EMISSION");
+
+        mat.color = Color.white;
+        mat.SetColor("_EmissionColor", Color.black);
+
+
     }
 
 
@@ -40,15 +98,23 @@ public class PaperClick : CAVE2Interactable
 
         if(evt.button == CAVE2.Button.Button3 && wandPointing && !hasTriggered)
         {
+            glowing = false;
+            mat.color = Color.white;
+            mat.SetColor("_EmissionColor", Color.black);
+
             StartCoroutine(ShowSequence());
         }
     }
     IEnumerator ShowTypography(float originalSpeed, float originalMovementScale)
         {
-            hasTriggered = true;
+
+
 
 
             typographyObject.SetActive(true);
+            audioSource.clip = hmmSound;
+            audioSource.Play();
+
 
         // Parent FIRST
         //typographyObject.transform.SetParent(playerHead);
@@ -68,31 +134,38 @@ public class PaperClick : CAVE2Interactable
 
 
 
-            yield return new WaitForSeconds(5f); 
+            yield return new WaitForSeconds(3f); 
       
 
             typographyObject.SetActive(false);
- 
-      
+
+
+
     }
     IEnumerator ShowSequence()
     {
-        penSigning = quad.GetComponent<AudioSource>();
+        hasTriggered = true;
+
+
+        audioSource = quad.GetComponent<AudioSource>();
+        audioSource.loop = false;
+
         float originalTurnSpeed = navigator.turnSpeed;
         float originalMovementScale = navigator.movementScale;
 
         navigator.turnSpeed = 0f;
         navigator.movementScale = 0f;
 
-        Vector3 facePosition = playerHead.position + playerHead.forward * faceDistance;
+        Vector3 targetPos = playerHead.position + playerHead.forward * faceDistance;
         Quaternion faceRotation = Quaternion.LookRotation(playerHead.forward);
 
         // Move paper in front of the player
-        yield return StartCoroutine(MoveQuad(facePosition, faceRotation));
+        yield return StartCoroutine(MoveQuadWRotation(target.position, faceRotation));
         string text = "John Adams";
         signatureText.text = ""; // clear before writing
 
-        penSigning.Play();
+        audioSource.clip = penSigning;
+        audioSource.Play();
         // Gradually "write" the signature
         foreach (char c in text)
         {
@@ -104,26 +177,28 @@ public class PaperClick : CAVE2Interactable
 
             yield return new WaitForSeconds(0.2f); // adjust speed
         }
-        penSigning.Stop();
 
         yield return new WaitForSeconds(1f); // small pause at the end
 
 
         // Move back 
-        yield return StartCoroutine(MoveQuad(originalPosition, originalRotation));
+        yield return StartCoroutine(MoveQuadWRotation(originalPosition, originalRotation));
 
         yield return StartCoroutine(ShowTypography(originalTurnSpeed, originalMovementScale));
-        yield return new WaitForSeconds(5f);
+ 
         navigator.turnSpeed = originalTurnSpeed;
         navigator.movementScale = originalMovementScale;
 
         quad.SetActive(false);
 
         hasTriggered = true;
+        leaveRegistrarPortal.SetActive(true);
     }
 
-     IEnumerator MoveQuad(Vector3 targetPos, Quaternion targetRot){
-            while (Vector3.Distance(quad.transform.position, targetPos) > 0.01f)
+    IEnumerator MoveQuadWRotation(Vector3 targetPos, Quaternion targetRot){
+        audioSource.clip = paperSound;
+        audioSource.Play();
+        while (Vector3.Distance(quad.transform.position, targetPos) > 0.01f)
             {
                 quad.transform.position = Vector3.Lerp(
                     quad.transform.position,

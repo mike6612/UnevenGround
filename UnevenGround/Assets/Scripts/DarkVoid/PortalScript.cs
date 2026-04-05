@@ -10,6 +10,7 @@ public class PortalScript : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         player.transform.position = target.transform.position;
+        player.transform.rotation = Quaternion.Euler(0f, 90f, 0f);
         trigger.SetActive(true);
         target.SetActive(false);
     }

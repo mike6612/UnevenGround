@@ -1,7 +1,9 @@
-﻿using System.Collections;
+﻿using Boo.Lang;
+using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.XR.LegacyInputHelpers;
 
 public class registrarFeeSheetTrigger : MonoBehaviour
 {
@@ -29,7 +31,33 @@ public class registrarFeeSheetTrigger : MonoBehaviour
     public GameObject typographyObject_Emotion4;
 
 
+    private AudioSource audioSource;
+    public AudioClip suspenseSoundEffectHow;
+    public AudioClip suspenseSoundEffect1;
+    public AudioClip suspenseSoundEffect2;
+    public AudioClip suspenseSoundEffect3;
+    public List<AudioClip> effects;
 
+    public AudioClip breathing;
+
+    public AudioClip paperSound;
+
+
+    public float speed = 2f;
+    public float intensity = 3f;
+    private Material mat;
+
+    void Awake()
+    {
+        effects = new List<AudioClip>
+    {
+        suspenseSoundEffect1,
+        suspenseSoundEffect2,
+        suspenseSoundEffect3
+    };
+    }
+
+      
 
 
 
@@ -41,7 +69,9 @@ public class registrarFeeSheetTrigger : MonoBehaviour
         originalPosition = quad.transform.position;
         originalRotation = quad.transform.rotation;
         quad.SetActive(false);
-        petitionQuad.SetActive(false);
+        petitionQuad.SetActive(true); // this should be false - Michael
+
+        
     }
 
     void OnTriggerEnter(Collider other)
@@ -70,7 +100,8 @@ public class registrarFeeSheetTrigger : MonoBehaviour
         //Vector3 position = playerHead.position + playerHead.forward * faceDistance;
         Vector3 position = target.position;
         //Quaternion faceRotation = Quaternion.LookRotation(playerHead.forward);
-
+        audioSource = GetComponent<AudioSource>();
+        audioSource.loop = false;
         yield return StartCoroutine(MoveQuad(position));
 
         // Step 3: Show hidden fees 
@@ -104,6 +135,10 @@ public class registrarFeeSheetTrigger : MonoBehaviour
         yield return StartCoroutine(ShowEmotionTypography());
         navigator.turnSpeed = originalTurnSpeed;
         navigator.movementScale = originalMovementScale;
+        audioSource.clip = breathing;
+        audioSource.Play();
+
+
 
     }
 
@@ -111,6 +146,8 @@ public class registrarFeeSheetTrigger : MonoBehaviour
 
     IEnumerator MoveQuad(Vector3 targetPos)
     {
+        audioSource.clip = paperSound;
+        audioSource.Play();
         while (Vector3.Distance(quad.transform.position, targetPos) > 0.01f)
         {
             quad.transform.position = Vector3.Lerp(
@@ -135,8 +172,11 @@ public class registrarFeeSheetTrigger : MonoBehaviour
         //HowVertical.SetActive(false);
 
 
+
         HowDiagonal.SetActive(true);
 
+        audioSource.clip = suspenseSoundEffectHow;
+        audioSource.Play();
 
         yield return new WaitForSeconds(5f);  // wait before next one
         HowDiagonal.SetActive(false);
@@ -168,14 +208,16 @@ public class registrarFeeSheetTrigger : MonoBehaviour
 
 
 
-
+        int count = 0;
         foreach (GameObject obj in typographyObjects)
         {
    
             obj.SetActive(true);   // show the object
-     
+            audioSource.clip = effects[count];
+            audioSource.Play();
             yield return new WaitForSeconds(3f);  // wait before next one
             obj.SetActive(false);
+            count++;
         }
 
 
@@ -189,6 +231,9 @@ public class registrarFeeSheetTrigger : MonoBehaviour
         typographyObject_Emotion1.SetActive(false);
         typographyObject_Emotion2.SetActive(false);
         typographyObject_Emotion3.SetActive(false);
+
+
+
         //typographyObject_Emotion4.SetActive(false);
     }
 

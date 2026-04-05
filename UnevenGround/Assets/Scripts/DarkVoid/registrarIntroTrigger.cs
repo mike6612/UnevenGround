@@ -10,6 +10,11 @@ public class registrarIntroTrigger : MonoBehaviour
     public CAVE2WandNavigator navigator;
     public CAVE2InputManager inputManager;
     public bool disableTurning;
+    public AudioClip maleSigh;
+    
+    public GameObject trigger;
+
+    private AudioSource audioSource;
 
 
     float originalTurnSpeed;
@@ -40,14 +45,24 @@ public class registrarIntroTrigger : MonoBehaviour
 
 IEnumerator ShowTypography()
     {
+        audioSource = GetComponent<AudioSource>();
 
         typographyObject.SetActive(true);
+        audioSource.loop = false; 
+
+        audioSource.clip = maleSigh;
+
+        audioSource.Play();
         yield return new WaitForSeconds(4f);
 
+
+
+        trigger.SetActive(false);
 
         navigator.EnableMovement();
 
         typographyObject.SetActive(false);
+
         navigator.turnSpeed = originalTurnSpeed;
         navigator.movementScale = originalMovementScale;
     }
