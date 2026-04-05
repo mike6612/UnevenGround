@@ -1,57 +1,65 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ricar\\UnevenGround\\UnevenGround\\",
+  "WorkspaceRootPath": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|c:\\users\\ricar\\unevenground\\unevenground\\assets\\scripts\\darkvoid\\portalscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\darkvoid\\portalscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|C:\\Users\\ricar\\UnevenGround\\UnevenGround\\assets\\scripts\\darkvoid\\paperclick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\darkvoid\\paperclick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:1:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|c:\\users\\ricar\\unevenground\\unevenground\\assets\\scripts\\darkvoid\\registrarfeesheettrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:1:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\darkvoid\\registrarfeesheettrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|c:\\users\\ricar\\unevenground\\unevenground\\assets\\scripts\\darkvoid\\musicmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\darkvoid\\musicmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|c:\\users\\ricar\\unevenground\\unevenground\\assets\\scripts\\darkvoid\\registrarintrotrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\darkvoid\\registrarintrotrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|C:\\Users\\ricar\\UnevenGround\\UnevenGround\\Assets\\Scripts\\DarkVoid\\WindAudio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|solutionrelative:Assets\\Scripts\\DarkVoid\\WindAudio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|C:\\Users\\ricar\\UnevenGround\\UnevenGround\\assets\\module-omicron\\cave2\\scripts\\navigation\\cave2wandnavigator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|solutionrelative:assets\\module-omicron\\cave2\\scripts\\navigation\\cave2wandnavigator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|C:\\Users\\ricar\\UnevenGround\\UnevenGround\\assets\\scripts\\highschoolscripts\\triggerelevatoranimation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\assets\\scripts\\highschoolscripts\\triggerelevatoranimation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\highschoolscripts\\triggerelevatoranimation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|C:\\Users\\ricar\\UnevenGround\\UnevenGround\\assets\\scripts\\highschoolscripts\\movetowardsposition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|c:\\users\\jason\\onedrive\\desktop\\spring 2026\\cs 427\\unevenground\\unevenground\\assets\\scripts\\highschoolscripts\\loadnextsceneasync.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\highschoolscripts\\loadnextsceneasync.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|c:\\users\\jason\\onedrive\\desktop\\spring 2026\\cs 427\\unevenground\\unevenground\\assets\\scripts\\highschoolscripts\\loadnextscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\highschoolscripts\\loadnextscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\assets\\scripts\\final\\osiciliate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\final\\osiciliate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\assets\\scripts\\darkvoid\\windaudio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\darkvoid\\windaudio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\assets\\scripts\\darkvoid\\portalscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\darkvoid\\portalscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\assets\\scripts\\darkvoid\\paperclick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\darkvoid\\paperclick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:1:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\assets\\scripts\\darkvoid\\registrarfeesheettrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:1:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\darkvoid\\registrarfeesheettrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\assets\\scripts\\darkvoid\\musicmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\darkvoid\\musicmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\assets\\module-omicron\\cave2\\scripts\\navigation\\cave2wandnavigator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|solutionrelative:assets\\module-omicron\\cave2\\scripts\\navigation\\cave2wandnavigator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\assets\\scripts\\highschoolscripts\\movetowardsposition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\highschoolscripts\\movetowardsposition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|C:\\Users\\ricar\\UnevenGround\\UnevenGround\\assets\\module-omicron\\cave2\\scripts\\examples\\wandpointer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\assets\\module-omicron\\cave2\\scripts\\examples\\wandpointer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|solutionrelative:assets\\module-omicron\\cave2\\scripts\\examples\\wandpointer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|C:\\Users\\ricar\\UnevenGround\\UnevenGround\\assets\\imported assets\\20 ground material sets man made\\readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\assets\\imported assets\\20 ground material sets man made\\readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|solutionrelative:assets\\imported assets\\20 ground material sets man made\\readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|C:\\Users\\ricar\\UnevenGround\\UnevenGround\\Assets\\Scripts\\DarkVoid\\StomachGrowl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\Scripts\\DarkVoid\\StomachGrowl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|solutionrelative:Assets\\Scripts\\DarkVoid\\StomachGrowl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:2:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|c:\\users\\ricar\\unevenground\\unevenground\\assets\\scripts\\darkvoid\\registrarfeesheettrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:2:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\assets\\scripts\\darkvoid\\registrarfeesheettrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:2:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\darkvoid\\registrarfeesheettrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -62,171 +70,190 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "registrarIntroTrigger.cs",
-              "DocumentMoniker": "C:\\Users\\ricar\\UnevenGround\\UnevenGround\\Assets\\Scripts\\DarkVoid\\registrarIntroTrigger.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\DarkVoid\\registrarIntroTrigger.cs",
-              "ToolTip": "C:\\Users\\ricar\\UnevenGround\\UnevenGround\\Assets\\Scripts\\DarkVoid\\registrarIntroTrigger.cs",
-              "RelativeToolTip": "Assets\\Scripts\\DarkVoid\\registrarIntroTrigger.cs",
-              "ViewState": "AgIAACoAAADg/////38wwA4AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-05T00:04:19.867Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PortalScript.cs",
-              "DocumentMoniker": "C:\\Users\\ricar\\UnevenGround\\UnevenGround\\Assets\\Scripts\\DarkVoid\\PortalScript.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\DarkVoid\\PortalScript.cs",
-              "ToolTip": "C:\\Users\\ricar\\UnevenGround\\UnevenGround\\Assets\\Scripts\\DarkVoid\\PortalScript.cs",
-              "RelativeToolTip": "Assets\\Scripts\\DarkVoid\\PortalScript.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA7AAAAAAAAAA==",
+              "Title": "TriggerElevatorAnimation.cs",
+              "DocumentMoniker": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\Scripts\\HighSchoolScripts\\TriggerElevatorAnimation.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\HighSchoolScripts\\TriggerElevatorAnimation.cs",
+              "ToolTip": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\Scripts\\HighSchoolScripts\\TriggerElevatorAnimation.cs",
+              "RelativeToolTip": "Assets\\Scripts\\HighSchoolScripts\\TriggerElevatorAnimation.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAiwGQAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-05T08:00:21.658Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MusicManager.cs",
-              "DocumentMoniker": "C:\\Users\\ricar\\UnevenGround\\UnevenGround\\Assets\\Scripts\\DarkVoid\\MusicManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\DarkVoid\\MusicManager.cs",
-              "ToolTip": "C:\\Users\\ricar\\UnevenGround\\UnevenGround\\Assets\\Scripts\\DarkVoid\\MusicManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\DarkVoid\\MusicManager.cs",
-              "ViewState": "AgIAAAUAAADAl5mZmZkMwBIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-05T02:15:57.39Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "registrarFeeSheetTrigger.cs",
-              "DocumentMoniker": "C:\\Users\\ricar\\UnevenGround\\UnevenGround\\Assets\\Scripts\\DarkVoid\\registrarFeeSheetTrigger.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\DarkVoid\\registrarFeeSheetTrigger.cs",
-              "ToolTip": "C:\\Users\\ricar\\UnevenGround\\UnevenGround\\Assets\\Scripts\\DarkVoid\\registrarFeeSheetTrigger.cs",
-              "RelativeToolTip": "Assets\\Scripts\\DarkVoid\\registrarFeeSheetTrigger.cs",
-              "ViewState": "AgIAAIkAAACAmpmZmZkEwJQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-05T00:04:19.877Z",
+              "WhenOpened": "2026-04-05T18:36:53.136Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "PaperClick.cs",
-              "DocumentMoniker": "C:\\Users\\ricar\\UnevenGround\\UnevenGround\\Assets\\Scripts\\DarkVoid\\PaperClick.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\DarkVoid\\PaperClick.cs",
-              "ToolTip": "C:\\Users\\ricar\\UnevenGround\\UnevenGround\\Assets\\Scripts\\DarkVoid\\PaperClick.cs",
-              "RelativeToolTip": "Assets\\Scripts\\DarkVoid\\PaperClick.cs",
-              "ViewState": "AgIAAKoAAAAAjmZmZuYWwMIAAAAtAAAAAAAAAA==",
+              "Title": "LoadNextSceneAsync.cs",
+              "DocumentMoniker": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\Scripts\\HighSchoolScripts\\LoadNextSceneAsync.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\HighSchoolScripts\\LoadNextSceneAsync.cs",
+              "ToolTip": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\Scripts\\HighSchoolScripts\\LoadNextSceneAsync.cs",
+              "RelativeToolTip": "Assets\\Scripts\\HighSchoolScripts\\LoadNextSceneAsync.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAA1wBcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-05T00:04:19.876Z",
+              "WhenOpened": "2026-04-05T18:37:37.962Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "WindAudio.cs",
-              "DocumentMoniker": "C:\\Users\\ricar\\UnevenGround\\UnevenGround\\Assets\\Scripts\\DarkVoid\\WindAudio.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\DarkVoid\\WindAudio.cs",
-              "ToolTip": "C:\\Users\\ricar\\UnevenGround\\UnevenGround\\Assets\\Scripts\\DarkVoid\\WindAudio.cs",
-              "RelativeToolTip": "Assets\\Scripts\\DarkVoid\\WindAudio.cs",
-              "ViewState": "AgIAAAEAAADAm5mZmRkWwAcAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "LoadNextScene.cs",
+              "DocumentMoniker": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\Scripts\\HighSchoolScripts\\LoadNextScene.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\HighSchoolScripts\\LoadNextScene.cs",
+              "ToolTip": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\Scripts\\HighSchoolScripts\\LoadNextScene.cs",
+              "RelativeToolTip": "Assets\\Scripts\\HighSchoolScripts\\LoadNextScene.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAIBAwBgAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-05T00:04:19.871Z",
+              "WhenOpened": "2026-04-05T18:36:53.126Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "MoveTowardsPosition.cs",
-              "DocumentMoniker": "C:\\Users\\ricar\\UnevenGround\\UnevenGround\\Assets\\Scripts\\HighSchoolScripts\\MoveTowardsPosition.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\HighSchoolScripts\\MoveTowardsPosition.cs",
-              "ToolTip": "C:\\Users\\ricar\\UnevenGround\\UnevenGround\\Assets\\Scripts\\HighSchoolScripts\\MoveTowardsPosition.cs",
-              "RelativeToolTip": "Assets\\Scripts\\HighSchoolScripts\\MoveTowardsPosition.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAywBYAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-05T00:04:19.874Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "WandPointer.cs",
-              "DocumentMoniker": "C:\\Users\\ricar\\UnevenGround\\UnevenGround\\Assets\\module-omicron\\CAVE2\\Scripts\\Examples\\WandPointer.cs",
-              "RelativeDocumentMoniker": "Assets\\module-omicron\\CAVE2\\Scripts\\Examples\\WandPointer.cs",
-              "ToolTip": "C:\\Users\\ricar\\UnevenGround\\UnevenGround\\Assets\\module-omicron\\CAVE2\\Scripts\\Examples\\WandPointer.cs",
-              "RelativeToolTip": "Assets\\module-omicron\\CAVE2\\Scripts\\Examples\\WandPointer.cs",
-              "ViewState": "AgIAAL4AAAAAAAAAAAAYwM8AAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-05T00:04:19.875Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "readme.txt",
-              "DocumentMoniker": "C:\\Users\\ricar\\UnevenGround\\UnevenGround\\Assets\\Imported Assets\\20 Ground Material Sets MAN MADE\\readme.txt",
-              "RelativeDocumentMoniker": "Assets\\Imported Assets\\20 Ground Material Sets MAN MADE\\readme.txt",
-              "ToolTip": "C:\\Users\\ricar\\UnevenGround\\UnevenGround\\Assets\\Imported Assets\\20 Ground Material Sets MAN MADE\\readme.txt",
-              "RelativeToolTip": "Assets\\Imported Assets\\20 Ground Material Sets MAN MADE\\readme.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2026-04-05T00:04:19.875Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "TriggerElevatorAnimation.cs",
-              "DocumentMoniker": "C:\\Users\\ricar\\UnevenGround\\UnevenGround\\Assets\\Scripts\\HighSchoolScripts\\TriggerElevatorAnimation.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\HighSchoolScripts\\TriggerElevatorAnimation.cs",
-              "ToolTip": "C:\\Users\\ricar\\UnevenGround\\UnevenGround\\Assets\\Scripts\\HighSchoolScripts\\TriggerElevatorAnimation.cs",
-              "RelativeToolTip": "Assets\\Scripts\\HighSchoolScripts\\TriggerElevatorAnimation.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAuwCgAAAAFAAAAAAAAAA==",
+              "Title": "registrarFeeSheetTrigger.cs",
+              "DocumentMoniker": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\Scripts\\DarkVoid\\registrarFeeSheetTrigger.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\DarkVoid\\registrarFeeSheetTrigger.cs",
+              "ToolTip": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\Scripts\\DarkVoid\\registrarFeeSheetTrigger.cs",
+              "RelativeToolTip": "Assets\\Scripts\\DarkVoid\\registrarFeeSheetTrigger.cs",
+              "ViewState": "AgIAAIkAAACAmpmZmZkEwJQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-05T00:04:19.876Z"
+              "WhenOpened": "2026-04-05T18:36:53.132Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "CAVE2WandNavigator.cs",
-              "DocumentMoniker": "C:\\Users\\ricar\\UnevenGround\\UnevenGround\\Assets\\module-omicron\\CAVE2\\Scripts\\Navigation\\CAVE2WandNavigator.cs",
-              "RelativeDocumentMoniker": "Assets\\module-omicron\\CAVE2\\Scripts\\Navigation\\CAVE2WandNavigator.cs",
-              "ToolTip": "C:\\Users\\ricar\\UnevenGround\\UnevenGround\\Assets\\module-omicron\\CAVE2\\Scripts\\Navigation\\CAVE2WandNavigator.cs",
-              "RelativeToolTip": "Assets\\module-omicron\\CAVE2\\Scripts\\Navigation\\CAVE2WandNavigator.cs",
-              "ViewState": "AgIAALcAAAAAAAAAAIBAwMkAAAAjAAAAAAAAAA==",
+              "Title": "PaperClick.cs",
+              "DocumentMoniker": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\Scripts\\DarkVoid\\PaperClick.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\DarkVoid\\PaperClick.cs",
+              "ToolTip": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\Scripts\\DarkVoid\\PaperClick.cs",
+              "RelativeToolTip": "Assets\\Scripts\\DarkVoid\\PaperClick.cs",
+              "ViewState": "AgIAAKoAAAAAjmZmZuYWwMIAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-05T00:04:19.872Z"
+              "WhenOpened": "2026-04-05T18:36:53.133Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MoveTowardsPosition.cs",
+              "DocumentMoniker": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\Scripts\\HighSchoolScripts\\MoveTowardsPosition.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\HighSchoolScripts\\MoveTowardsPosition.cs",
+              "ToolTip": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\Scripts\\HighSchoolScripts\\MoveTowardsPosition.cs",
+              "RelativeToolTip": "Assets\\Scripts\\HighSchoolScripts\\MoveTowardsPosition.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAywBYAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-05T18:36:53.134Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "StomachGrowl.cs",
-              "DocumentMoniker": "C:\\Users\\ricar\\UnevenGround\\UnevenGround\\Assets\\Scripts\\DarkVoid\\StomachGrowl.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\DarkVoid\\StomachGrowl.cs",
-              "ToolTip": "C:\\Users\\ricar\\UnevenGround\\UnevenGround\\Assets\\Scripts\\DarkVoid\\StomachGrowl.cs",
-              "RelativeToolTip": "Assets\\Scripts\\DarkVoid\\StomachGrowl.cs",
-              "ViewState": "AgIAABIAAABglpmZmZkuwBwAAAAAAAAAAAAAAA==",
+              "Title": "WandPointer.cs",
+              "DocumentMoniker": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\module-omicron\\CAVE2\\Scripts\\Examples\\WandPointer.cs",
+              "RelativeDocumentMoniker": "Assets\\module-omicron\\CAVE2\\Scripts\\Examples\\WandPointer.cs",
+              "ToolTip": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\module-omicron\\CAVE2\\Scripts\\Examples\\WandPointer.cs",
+              "RelativeToolTip": "Assets\\module-omicron\\CAVE2\\Scripts\\Examples\\WandPointer.cs",
+              "ViewState": "AgIAAL4AAAAAAAAAAAAYwM8AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-05T00:04:19.877Z"
+              "WhenOpened": "2026-04-05T18:36:53.135Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MusicManager.cs",
+              "DocumentMoniker": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\Scripts\\DarkVoid\\MusicManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\DarkVoid\\MusicManager.cs",
+              "ToolTip": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\Scripts\\DarkVoid\\MusicManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\DarkVoid\\MusicManager.cs",
+              "ViewState": "AgIAAAUAAADAl5mZmZkMwBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-05T18:36:53.137Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Osiciliate.cs",
+              "DocumentMoniker": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\Scripts\\Final\\Osiciliate.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Final\\Osiciliate.cs",
+              "ToolTip": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\Scripts\\Final\\Osiciliate.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Final\\Osiciliate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-05T18:36:53.138Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
+              "Title": "readme.txt",
+              "DocumentMoniker": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\Imported Assets\\20 Ground Material Sets MAN MADE\\readme.txt",
+              "RelativeDocumentMoniker": "Assets\\Imported Assets\\20 Ground Material Sets MAN MADE\\readme.txt",
+              "ToolTip": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\Imported Assets\\20 Ground Material Sets MAN MADE\\readme.txt",
+              "RelativeToolTip": "Assets\\Imported Assets\\20 Ground Material Sets MAN MADE\\readme.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-04-05T18:36:53.138Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PortalScript.cs",
+              "DocumentMoniker": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\Scripts\\DarkVoid\\PortalScript.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\DarkVoid\\PortalScript.cs",
+              "ToolTip": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\Scripts\\DarkVoid\\PortalScript.cs",
+              "RelativeToolTip": "Assets\\Scripts\\DarkVoid\\PortalScript.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-05T18:36:53.139Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "WindAudio.cs",
+              "DocumentMoniker": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\Scripts\\DarkVoid\\WindAudio.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\DarkVoid\\WindAudio.cs",
+              "ToolTip": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\Scripts\\DarkVoid\\WindAudio.cs",
+              "RelativeToolTip": "Assets\\Scripts\\DarkVoid\\WindAudio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-05T18:36:53.14Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CAVE2WandNavigator.cs",
+              "DocumentMoniker": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\module-omicron\\CAVE2\\Scripts\\Navigation\\CAVE2WandNavigator.cs",
+              "RelativeDocumentMoniker": "Assets\\module-omicron\\CAVE2\\Scripts\\Navigation\\CAVE2WandNavigator.cs",
+              "ToolTip": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\module-omicron\\CAVE2\\Scripts\\Navigation\\CAVE2WandNavigator.cs",
+              "RelativeToolTip": "Assets\\module-omicron\\CAVE2\\Scripts\\Navigation\\CAVE2WandNavigator.cs",
+              "ViewState": "AgIAALcAAAAAAAAAAIBAwMkAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-05T18:36:53.141Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "StomachGrowl.cs",
+              "DocumentMoniker": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\Scripts\\DarkVoid\\StomachGrowl.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\DarkVoid\\StomachGrowl.cs",
+              "ToolTip": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\Scripts\\DarkVoid\\StomachGrowl.cs",
+              "RelativeToolTip": "Assets\\Scripts\\DarkVoid\\StomachGrowl.cs",
+              "ViewState": "AgIAABIAAABglpmZmZkuwBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-05T18:36:53.141Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "registrarFeeSheetTrigger.cs",
-              "DocumentMoniker": "C:\\Users\\ricar\\UnevenGround\\UnevenGround\\Assets\\Scripts\\DarkVoid\\registrarFeeSheetTrigger.cs",
+              "DocumentMoniker": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\Scripts\\DarkVoid\\registrarFeeSheetTrigger.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\DarkVoid\\registrarFeeSheetTrigger.cs",
-              "ToolTip": "C:\\Users\\ricar\\UnevenGround\\UnevenGround\\Assets\\Scripts\\DarkVoid\\registrarFeeSheetTrigger.cs",
+              "ToolTip": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\Scripts\\DarkVoid\\registrarFeeSheetTrigger.cs",
               "RelativeToolTip": "Assets\\Scripts\\DarkVoid\\registrarFeeSheetTrigger.cs",
               "ViewState": "AgIAAD8AAAAAzszMzOwwwFAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-05T00:04:19.877Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-05T18:36:53.142Z"
             }
           ]
         }

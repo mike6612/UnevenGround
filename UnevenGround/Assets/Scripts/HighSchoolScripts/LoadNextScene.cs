@@ -1,11 +1,12 @@
-﻿using UnityEngine;
-
+﻿using System.Collections;
+using UnityEngine;
 public class LoadNextScene : MonoBehaviour
 {
+    LoadNextSceneAsync loadNextSceneAsync;
     // Start is called before the first frame update
     void Start()
     {
-
+        loadNextSceneAsync = FindObjectOfType<LoadNextSceneAsync>();
     }
 
     // Update is called once per frame
@@ -25,6 +26,18 @@ public class LoadNextScene : MonoBehaviour
             return;
         }
 
-        UnityEngine.SceneManagement.SceneManager.LoadScene(++currentSceneIndex);
+        // Highschool scene
+        if (currentSceneIndex == 0)
+        {
+            //StartCoroutine(WaitForXSeconds(5));
+        }
+
+        //UnityEngine.SceneManagement.SceneManager.LoadScene(++currentSceneIndex);
+    }
+
+    IEnumerator WaitForXSeconds(int x)
+    {
+        yield return new WaitForSeconds(x);
+        //loadNextSceneAsync.shouldLoadNextScene = true;
     }
 }

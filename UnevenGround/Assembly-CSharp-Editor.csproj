@@ -61,22 +61,22 @@
      <Compile Include="Assets\Imported Assets\CoffeeShopStarterPack\Scripts\Editor\ScreenShotHelperEditor.cs" />
      <Compile Include="Assets\Imported Assets\CoffeeShopStarterPack\Scripts\Editor\ScreenShotImportSettings.cs" />
      <Compile Include="Assets\Imported Assets\CoffeeShopStarterPack\Scripts\Editor\SliceHelperEditor.cs" />
+     <Compile Include="Assets\Imported Assets\NatureStarterKit2\Editor\ImageEffects\AntialiasingEditor.cs" />
+     <Compile Include="Assets\Imported Assets\NatureStarterKit2\Editor\ImageEffects\BloomAndFlaresEditor.cs" />
+     <Compile Include="Assets\Imported Assets\NatureStarterKit2\Editor\ImageEffects\BloomEditor.cs" />
+     <Compile Include="Assets\Imported Assets\NatureStarterKit2\Editor\ImageEffects\CameraMotionBlurEditor.cs" />
+     <Compile Include="Assets\Imported Assets\NatureStarterKit2\Editor\ImageEffects\ColorCorrectionCurvesEditor.cs" />
+     <Compile Include="Assets\Imported Assets\NatureStarterKit2\Editor\ImageEffects\ColorCorrectionLookupEditor.cs" />
+     <Compile Include="Assets\Imported Assets\NatureStarterKit2\Editor\ImageEffects\CreaseShadingEditor.cs" />
+     <Compile Include="Assets\Imported Assets\NatureStarterKit2\Editor\ImageEffects\DepthOfFieldDeprecatedEditor.cs" />
+     <Compile Include="Assets\Imported Assets\NatureStarterKit2\Editor\ImageEffects\DepthOfFieldEditor.cs" />
+     <Compile Include="Assets\Imported Assets\NatureStarterKit2\Editor\ImageEffects\EdgeDetectionEditor.cs" />
+     <Compile Include="Assets\Imported Assets\NatureStarterKit2\Editor\ImageEffects\NoiseAndGrainEditor.cs" />
+     <Compile Include="Assets\Imported Assets\NatureStarterKit2\Editor\ImageEffects\SunShaftsEditor.cs" />
+     <Compile Include="Assets\Imported Assets\NatureStarterKit2\Editor\ImageEffects\TonemappingEditor.cs" />
+     <Compile Include="Assets\Imported Assets\NatureStarterKit2\Editor\ImageEffects\VignetteAndChromaticAberrationEditor.cs" />
      <Compile Include="Assets\module-omicron\CAVE2\Scripts\Editor\OmicronEditorMode.cs" />
      <Compile Include="Assets\module-omicron\Scripts\Util\Editor\CreateAssetBundles.cs" />
-     <Compile Include="Assets\NatureStarterKit2\Editor\ImageEffects\AntialiasingEditor.cs" />
-     <Compile Include="Assets\NatureStarterKit2\Editor\ImageEffects\BloomAndFlaresEditor.cs" />
-     <Compile Include="Assets\NatureStarterKit2\Editor\ImageEffects\BloomEditor.cs" />
-     <Compile Include="Assets\NatureStarterKit2\Editor\ImageEffects\CameraMotionBlurEditor.cs" />
-     <Compile Include="Assets\NatureStarterKit2\Editor\ImageEffects\ColorCorrectionCurvesEditor.cs" />
-     <Compile Include="Assets\NatureStarterKit2\Editor\ImageEffects\ColorCorrectionLookupEditor.cs" />
-     <Compile Include="Assets\NatureStarterKit2\Editor\ImageEffects\CreaseShadingEditor.cs" />
-     <Compile Include="Assets\NatureStarterKit2\Editor\ImageEffects\DepthOfFieldDeprecatedEditor.cs" />
-     <Compile Include="Assets\NatureStarterKit2\Editor\ImageEffects\DepthOfFieldEditor.cs" />
-     <Compile Include="Assets\NatureStarterKit2\Editor\ImageEffects\EdgeDetectionEditor.cs" />
-     <Compile Include="Assets\NatureStarterKit2\Editor\ImageEffects\NoiseAndGrainEditor.cs" />
-     <Compile Include="Assets\NatureStarterKit2\Editor\ImageEffects\SunShaftsEditor.cs" />
-     <Compile Include="Assets\NatureStarterKit2\Editor\ImageEffects\TonemappingEditor.cs" />
-     <Compile Include="Assets\NatureStarterKit2\Editor\ImageEffects\VignetteAndChromaticAberrationEditor.cs" />
  <Reference Include="UnityEditor.TestRunner">
  <HintPath>C:/Users/jason/OneDrive/Desktop/Spring 2026/CS 427/UnevenGround/UnevenGround/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
  </Reference>
