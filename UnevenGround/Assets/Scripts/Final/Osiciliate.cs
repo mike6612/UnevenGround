@@ -11,7 +11,7 @@ public class Osiciliate : MonoBehaviour
     void Start()
     {
         startPosition = transform.position;
-        endPosition = startPosition;
+        endPosition = startPosition + (Vector3.up * distanceToMove);
     }
 
     void Update()
@@ -22,7 +22,6 @@ public class Osiciliate : MonoBehaviour
     void ProcessOsiciliation()
     {
         lowerUpperValue = Mathf.PingPong(Time.time * moveSpeed, 1);
-        endPosition += distanceToMove * Vector3.up;
         transform.position = Vector3.Lerp(startPosition, endPosition, lowerUpperValue);
     }
 }
