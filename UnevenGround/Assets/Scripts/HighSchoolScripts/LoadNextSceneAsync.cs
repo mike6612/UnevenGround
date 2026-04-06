@@ -14,7 +14,6 @@ public class LoadNextSceneAsync : MonoBehaviour
     int currentSceneIndex = 0;
     public static bool isPlayerInside = false;
     public static bool shouldLoadNextScene = false;
-
     void Start()
     {
         currentSceneIndex = UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex;
@@ -24,14 +23,9 @@ public class LoadNextSceneAsync : MonoBehaviour
             return;
         }
         StartCoroutine(WaitThenLoad());
-
-        // This will tell you EXACTLY which object is being talked to
     }
 
-    void Update()
-    {
 
-    }
 
     void OnCollisionEnter(Collision collision)
     {

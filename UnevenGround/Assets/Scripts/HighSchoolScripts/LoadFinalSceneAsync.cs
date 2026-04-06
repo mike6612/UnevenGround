@@ -4,7 +4,6 @@ using UnityEngine.SceneManagement;
 public class LoadFinalSceneAsync : MonoBehaviour
 {
     public bool shouldLoadNextScene123 = false;
-    AsyncOperation op1;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,7 +30,6 @@ public class LoadFinalSceneAsync : MonoBehaviour
         int currentSceneIndex = UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex;
 
         asyncOperation = SceneManager.LoadSceneAsync(2);
-        op1 = asyncOperation;
 
         //Don't let the Scene activate until you allow it to
         asyncOperation.allowSceneActivation = false;

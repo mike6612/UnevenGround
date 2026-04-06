@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\assets\\scripts\\highschoolscripts\\elevatordarkvoid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\highschoolscripts\\elevatordarkvoid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\Scripts\\HighSchoolScripts\\LoadNextSceneAsync.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|solutionrelative:Assets\\Scripts\\HighSchoolScripts\\LoadNextSceneAsync.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:1:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|c:\\users\\jason\\onedrive\\desktop\\spring 2026\\cs 427\\unevenground\\unevenground\\assets\\scripts\\highschoolscripts\\loadnextscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:1:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\highschoolscripts\\loadnextscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\assets\\scripts\\highschoolscripts\\loadfinalsceneasync.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\highschoolscripts\\loadfinalsceneasync.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|c:\\users\\jason\\onedrive\\desktop\\spring 2026\\cs 427\\unevenground\\unevenground\\assets\\scripts\\highschoolscripts\\triggerelevatoranimation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\assets\\scripts\\highschoolscripts\\triggerelevatoranimation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\highschoolscripts\\triggerelevatoranimation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|c:\\users\\jason\\onedrive\\desktop\\spring 2026\\cs 427\\unevenground\\unevenground\\assets\\scripts\\highschoolscripts\\elevatordarkvoid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\highschoolscripts\\elevatordarkvoid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:1:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\assets\\scripts\\highschoolscripts\\loadnextscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:1:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\highschoolscripts\\loadnextscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\assets\\scripts\\highschoolscripts\\movetowardsposition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -79,7 +79,7 @@
       "RelativeMoniker": "D:0:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|solutionrelative:Assets\\module-omicron\\CAVE2\\Scripts\\Managers\\CAVE2Manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:2:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|c:\\users\\jason\\onedrive\\desktop\\spring 2026\\cs 427\\unevenground\\unevenground\\assets\\scripts\\highschoolscripts\\loadnextscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:2:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\assets\\scripts\\highschoolscripts\\loadnextscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:2:0:{ABEC025F-FD2A-EB47-8497-93621A03F3B3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\highschoolscripts\\loadnextscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -90,50 +90,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "TriggerElevatorAnimation.cs",
               "DocumentMoniker": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\Scripts\\HighSchoolScripts\\TriggerElevatorAnimation.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\HighSchoolScripts\\TriggerElevatorAnimation.cs",
               "ToolTip": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\Scripts\\HighSchoolScripts\\TriggerElevatorAnimation.cs",
               "RelativeToolTip": "Assets\\Scripts\\HighSchoolScripts\\TriggerElevatorAnimation.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAiwFAAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAACwAAAAAAAAAAAAIwGEAAABUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-05T18:36:53.136Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "LoadFinalSceneAsync.cs",
               "DocumentMoniker": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\Scripts\\HighSchoolScripts\\LoadFinalSceneAsync.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\HighSchoolScripts\\LoadFinalSceneAsync.cs",
               "ToolTip": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\Scripts\\HighSchoolScripts\\LoadFinalSceneAsync.cs",
               "RelativeToolTip": "Assets\\Scripts\\HighSchoolScripts\\LoadFinalSceneAsync.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAA1wCMAAAALAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-06T02:18:04.461Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "LoadNextSceneAsync.cs",
               "DocumentMoniker": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\Scripts\\HighSchoolScripts\\LoadNextSceneAsync.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\HighSchoolScripts\\LoadNextSceneAsync.cs",
               "ToolTip": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\Scripts\\HighSchoolScripts\\LoadNextSceneAsync.cs",
               "RelativeToolTip": "Assets\\Scripts\\HighSchoolScripts\\LoadNextSceneAsync.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAiwE0AAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-05T18:37:37.962Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "LoadNextScene.cs",
               "DocumentMoniker": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\Scripts\\HighSchoolScripts\\LoadNextScene.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\HighSchoolScripts\\LoadNextScene.cs",
@@ -141,18 +141,17 @@
               "RelativeToolTip": "Assets\\Scripts\\HighSchoolScripts\\LoadNextScene.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-05T18:36:53.126Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-05T18:36:53.126Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "ElevatorDarkVoid.cs",
               "DocumentMoniker": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\Scripts\\HighSchoolScripts\\ElevatorDarkVoid.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\HighSchoolScripts\\ElevatorDarkVoid.cs",
               "ToolTip": "C:\\Users\\jason\\OneDrive\\Desktop\\Spring 2026\\CS 427\\UnevenGround\\UnevenGround\\Assets\\Scripts\\HighSchoolScripts\\ElevatorDarkVoid.cs",
               "RelativeToolTip": "Assets\\Scripts\\HighSchoolScripts\\ElevatorDarkVoid.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAIwA0AAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-05T23:29:25.115Z",
               "EditorCaption": ""
@@ -191,8 +190,7 @@
               "RelativeToolTip": "Assets\\Scripts\\HighSchoolScripts\\LoadNextScene.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-06T03:11:42.061Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-06T03:11:42.061Z"
             },
             {
               "$type": "Document",
