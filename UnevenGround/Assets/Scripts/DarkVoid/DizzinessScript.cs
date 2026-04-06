@@ -6,32 +6,28 @@ using UnityEngine;
 
 public class DizzinessScript : MonoBehaviour
 {
-    private AudioSource audioSource;
+    public AudioSource audioSource;
 
     public GameObject typographyObject;
 
-    public AudioClip dizziness;
-    public bool canTrigger;
+    public bool canTrigger = true;
 
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player") && canTrigger)
             canTrigger = false;
-        StartCoroutine(Sequence());
+            StartCoroutine(Sequence());
     }
 
     IEnumerator Sequence()
     {
 
-        audioSource = GetComponent<AudioSource>();
-
+  
         typographyObject.SetActive(true);
 
-        audioSource.loop = false;
-        audioSource.clip = dizziness;
-
-        audioSource.Play();
+      
+        audioSource.Play(); 
         yield return null;
 
     }

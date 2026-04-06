@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BookStoreOutro : MonoBehaviour
+public class BookStoreTypographyTrigger : MonoBehaviour
 {
 
 
@@ -15,12 +15,11 @@ public class BookStoreOutro : MonoBehaviour
     public float moveSpeed = 2f;
 
 
-    public GameObject bookStoreEndingSentence;
+    public GameObject bookStoreTypography;
 
 
     public bool canTrigger = true;
 
-    public GameObject exitPortal;
 
 
 
@@ -28,7 +27,7 @@ public class BookStoreOutro : MonoBehaviour
     {
         if (other.CompareTag("Player") && canTrigger)
             canTrigger = false;
-        StartCoroutine(Sequence());
+            StartCoroutine(Sequence());
     }
 
     IEnumerator Sequence()
@@ -65,12 +64,13 @@ public class BookStoreOutro : MonoBehaviour
 
     IEnumerator ShowTypography()
     {
-        yield return new WaitForSeconds(2f);
 
-        bookStoreEndingSentence.SetActive(true);
 
-        yield return new WaitForSeconds(4f);
-        exitPortal.SetActive(true);
+        bookStoreTypography.SetActive(true);
+
+        yield return new WaitForSeconds(4f); 
+        bookStoreTypography.SetActive(false);
+
 
     }
 

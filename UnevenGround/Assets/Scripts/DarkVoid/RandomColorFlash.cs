@@ -2,7 +2,7 @@
 
 public class RandomColorFlash : MonoBehaviour
 {
-    private float changeInterval = 1f;
+    private float changeInterval = 0.3f;
 
     Renderer[] renderers;
     float timer;
