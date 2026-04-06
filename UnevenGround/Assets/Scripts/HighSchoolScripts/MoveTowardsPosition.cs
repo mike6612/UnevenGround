@@ -32,12 +32,15 @@ public class MoveTowardsPosition : MonoBehaviour
             transform.position = Vector3.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
         }
 
-        if (transform.position == targetPosition)
+        if (Vector3.Distance(transform.position, targetPosition) < 0.01f)
         {
             shouldMoveTowardsPosition = false;
             playerWandNavigator.movementScale = originalMovementScale;
             playerWandNavigator.turnSpeed = originalTurnSpeed;
+            Debug.Log("Word Object reached target: Resetting player speed.");
+            Destroy(gameObject);
         }
 
+        Debug.Log($"Current speed" + playerWandNavigator.movementScale);
     }
 }

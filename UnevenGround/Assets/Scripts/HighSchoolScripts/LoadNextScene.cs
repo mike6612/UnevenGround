@@ -2,10 +2,11 @@
 
 public class LoadNextScene : MonoBehaviour
 {
+    LoadNextSceneAsync loadNextSceneAsync;
     // Start is called before the first frame update
     void Start()
     {
-
+        loadNextSceneAsync = GetComponent<LoadNextSceneAsync>();
     }
 
     // Update is called once per frame
@@ -17,14 +18,15 @@ public class LoadNextScene : MonoBehaviour
     void OnCollisionEnter(Collision collision)
     {
         if (!collision.gameObject.CompareTag("Player")) { return; }
-        int currentSceneIndex = UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex;
+        LoadNextSceneAsync.shouldLoadNextScene = true;
+        //int currentSceneIndex = UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex;
 
-        if (UnityEngine.SceneManagement.SceneManager.sceneCountInBuildSettings <= currentSceneIndex + 1)
-        {
-            Debug.LogWarning("No more scenes to load.");
-            return;
-        }
+        //if (UnityEngine.SceneManagement.SceneManager.sceneCountInBuildSettings <= currentSceneIndex + 1)
+        //{
+        //    Debug.LogWarning("No more scenes to load.");
+        //    return;
+        //}
 
-        UnityEngine.SceneManagement.SceneManager.LoadScene(++currentSceneIndex);
+        //UnityEngine.SceneManagement.SceneManager.LoadScene(++currentSceneIndex);
     }
 }
