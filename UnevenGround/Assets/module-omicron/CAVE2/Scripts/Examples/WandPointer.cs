@@ -37,6 +37,7 @@ public class WandPointer : MonoBehaviour
     public int wandID = 1;
 
     public int foodCount = 0;
+    public int bookCount = 0;
 
 
 
@@ -66,7 +67,8 @@ public class WandPointer : MonoBehaviour
     private bool hasHitRegister;
 
     public GameObject foodOutroTrigger;
-
+    public GameObject bookstoreTypographyTrigger;
+    public GameObject bookOutroTrigger;
     void StopAudio()
     {
         // Let register continue playing sound as it's more natural,
@@ -201,6 +203,7 @@ public class WandPointer : MonoBehaviour
 
                     if (currentHitTag == "Register")
                     {
+                        bookstoreTypographyTrigger.SetActive(true);
                         GameObject donationBox = GameObject.FindGameObjectWithTag("DonationBox");
                         donationBox.GetComponent<TriggerAppear>().shouldAppear = true;
                     }
@@ -208,6 +211,8 @@ public class WandPointer : MonoBehaviour
                     if (currentHitTag == "Book")
                     {
                         hit.collider.gameObject.GetComponent<TriggerDisappear>().shouldDisappear = true;
+                        bookOutroTrigger.SetActive(true);
+
                         //GameObject book = GameObject.FindGameObjectWithTag("Book");
                         //book.GetComponent<TriggerDisappear>().shouldDisappear = true;
                     }
@@ -272,17 +277,20 @@ public class WandPointer : MonoBehaviour
                    
                 // Destroy it when fully transparent
                 Destroy(hit.collider.gameObject);
-                if(currentHitTag == "Food")
+                if (currentHitTag == "Food")
                 {
                     foodCount++;
                 }
+
                 if (foodCount == 4)
                 {
                     foodOutroTrigger.SetActive(true);
                 }
 
 
-            }
+
+
+        }
         }
     }
 }

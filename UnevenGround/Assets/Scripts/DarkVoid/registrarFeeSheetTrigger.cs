@@ -161,7 +161,7 @@ public class registrarFeeSheetTrigger : MonoBehaviour
     IEnumerator MovePerson(UnityEngine.Vector3 targetPos, UnityEngine.Quaternion targetRot)
     {
         while (UnityEngine.Vector3.Distance(player.transform.position, targetPos) > 0.01f ||
-               Mathf.Abs(Mathf.DeltaAngle(player.transform.eulerAngles.y, targetRot.eulerAngles.y)) > 0.1f)
+               Mathf.Abs(Mathf.DeltaAngle(cameraControler.transform.eulerAngles.y, targetRot.eulerAngles.y)) > 0.1f)
         {
             player.transform.position = UnityEngine.Vector3.MoveTowards(player.transform.position, targetPos, moveSpeed * Time.deltaTime);
             cameraControler.transform.rotation = UnityEngine.Quaternion.RotateTowards(cameraControler.transform.rotation, targetRot, moveSpeed * 100f * Time.deltaTime);

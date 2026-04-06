@@ -1,17 +1,9 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
-using System.Diagnostics.Contracts;
-using System.Numerics;
 using UnityEngine;
-using UnityEngine.TestTools;
-using UnityEngine.UI;
 
-public class CafeteriaOutroScript : MonoBehaviour
+public class BookStoreTypographyTrigger : MonoBehaviour
 {
-
-    public GameObject foodOutroTypography;
-    public GameObject exitPortal;
 
 
     public CAVE2WandNavigator navigator;
@@ -22,13 +14,13 @@ public class CafeteriaOutroScript : MonoBehaviour
     public Transform cameraControllerTarget;
     public float moveSpeed = 2f;
 
+
+    public GameObject bookStoreTypography;
+
+
     public bool canTrigger = true;
 
 
-    public AudioClip maleRelief;
-
-
-    private AudioSource audioSource;
 
 
     private void OnTriggerEnter(Collider other)
@@ -40,8 +32,6 @@ public class CafeteriaOutroScript : MonoBehaviour
 
     IEnumerator Sequence()
     {
-    
-
         float originalTurnSpeed = navigator.turnSpeed;
         float originalMovementScale = navigator.movementScale;
         navigator.turnSpeed = 0f;
@@ -49,13 +39,12 @@ public class CafeteriaOutroScript : MonoBehaviour
 
         yield return StartCoroutine(MovePerson(playerTarget.position, cameraControllerTarget.rotation));
 
-        yield return new WaitForSeconds(4f);
-
         yield return StartCoroutine(ShowTypography());
         navigator.turnSpeed = originalTurnSpeed;
         navigator.movementScale = originalMovementScale;
 
     }
+
 
 
     IEnumerator MovePerson(UnityEngine.Vector3 targetPos, UnityEngine.Quaternion targetRot)
@@ -73,27 +62,14 @@ public class CafeteriaOutroScript : MonoBehaviour
         cameraControler.transform.rotation = targetRot;
     }
 
-
-
     IEnumerator ShowTypography()
     {
 
-        audioSource = GetComponent<AudioSource>();
-        foodOutroTypography.SetActive(true);
+        bookStoreTypography.SetActive(true);
 
+        yield return new WaitForSeconds(4f); 
+        bookStoreTypography.SetActive(false);
 
-        audioSource.loop = false;
-
-        audioSource.clip = maleRelief;
-
-        audioSource.Play();
-
-
-        yield return new WaitForSeconds(4f);
-        exitPortal.SetActive(true);
     }
 
 }
-
-
-
