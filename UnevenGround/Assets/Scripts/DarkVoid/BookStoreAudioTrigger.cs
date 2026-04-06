@@ -5,19 +5,15 @@ using UnityEngine;
 public class BookStoreAudioTrigger : MonoBehaviour
 {
     public AudioSource bookStoreAudio;
-    private bool canTrigger = true;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player") && canTrigger)
+        if (other.CompareTag("Player"))
         {
-            canTrigger = false;
-            if (bookStoreAudio.isPlaying)
-                bookStoreAudio.Stop();
-            else
+            if (bookStoreAudio != null)
+            {
                 bookStoreAudio.Play();
-
+            }
         }
     }
-
 }
