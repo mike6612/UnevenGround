@@ -25,6 +25,7 @@
  * ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *************************************************************************************************/
 
+using System;
 using UnityEngine;
 
 public class WandPointer : MonoBehaviour
@@ -34,6 +35,10 @@ public class WandPointer : MonoBehaviour
     [SerializeField] float donationBoxFadeSpeed = 0.5f;
     bool shouldShowDonationBox = false;
     public int wandID = 1;
+
+    public int foodCount = 0;
+
+
 
     public bool laserActivated;
     float laserDistance;
@@ -59,6 +64,8 @@ public class WandPointer : MonoBehaviour
 
     private string currentHitTag = "";
     private bool hasHitRegister;
+
+    public GameObject foodOutroTrigger;
 
     void StopAudio()
     {
@@ -262,8 +269,19 @@ public class WandPointer : MonoBehaviour
             r.material.color = c;
             if (r.material.color.a <= 0)
             {
+                   
                 // Destroy it when fully transparent
                 Destroy(hit.collider.gameObject);
+                if(currentHitTag == "Food")
+                {
+                    foodCount++;
+                }
+                if (foodCount == 4)
+                {
+                    foodOutroTrigger.SetActive(true);
+                }
+
+
             }
         }
     }

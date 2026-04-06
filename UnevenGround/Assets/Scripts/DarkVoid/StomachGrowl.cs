@@ -34,14 +34,18 @@ public class StomachGrowl : MonoBehaviour
             navigator.movementScale = 0;
             navigator.turnSpeed = 0;
 
+     
+
             audioSource.PlayOneShot(stomachGrowl);
 
-            StartCoroutine(showTypography()); 
+            StartCoroutine(showTypography());
 
-         
+
             GetComponent<Collider>().enabled = false;
         }
     }
+
+
 
     IEnumerator showTypography()
     {

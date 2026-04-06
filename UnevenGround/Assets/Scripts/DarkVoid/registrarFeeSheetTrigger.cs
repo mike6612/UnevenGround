@@ -1,5 +1,6 @@
 ﻿using Boo.Lang;
 using System.Collections;
+using System.Numerics;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -13,8 +14,8 @@ public class registrarFeeSheetTrigger : MonoBehaviour
     public float faceDistance = 1.2f;    // how far from face
     public float moveSpeed = 2f;
 
-    private Vector3 originalPosition;
-    private Quaternion originalRotation;
+    private UnityEngine.Vector3 originalPosition;
+    private UnityEngine.Quaternion originalRotation;
     private bool isRunning = false;
     public TextMeshProUGUI feeText;
     public TextMeshProUGUI feeTitleText;
@@ -46,6 +47,12 @@ public class registrarFeeSheetTrigger : MonoBehaviour
     public float speed = 2f;
     public float intensity = 3f;
     private Material mat;
+
+    public GameObject player;
+    public Transform playerTarget;
+
+    public Transform cameraControler;
+    public Transform cameraControllerTarget;
 
     void Awake()
     {
@@ -86,10 +93,17 @@ public class registrarFeeSheetTrigger : MonoBehaviour
     {
         isRunning = true;
        
+
         float originalTurnSpeed = navigator.turnSpeed;
         float originalMovementScale = navigator.movementScale;
         navigator.turnSpeed = 0f;
         navigator.movementScale = 0f;
+
+        yield return StartCoroutine(MovePerson(playerTarget.position, cameraControllerTarget.rotation));
+
+
+
+
 
         quad.SetActive(true);
 
@@ -98,7 +112,7 @@ public class registrarFeeSheetTrigger : MonoBehaviour
 
         // Step 2: Move to face
         //Vector3 position = playerHead.position + playerHead.forward * faceDistance;
-        Vector3 position = target.position;
+        UnityEngine.Vector3 position = target.position;
         //Quaternion faceRotation = Quaternion.LookRotation(playerHead.forward);
         audioSource = GetComponent<AudioSource>();
         audioSource.loop = false;
@@ -144,13 +158,28 @@ public class registrarFeeSheetTrigger : MonoBehaviour
 
 
 
-    IEnumerator MoveQuad(Vector3 targetPos)
+    IEnumerator MovePerson(UnityEngine.Vector3 targetPos, UnityEngine.Quaternion targetRot)
+    {
+        while (UnityEngine.Vector3.Distance(player.transform.position, targetPos) > 0.01f ||
+               Mathf.Abs(Mathf.DeltaAngle(player.transform.eulerAngles.y, targetRot.eulerAngles.y)) > 0.1f)
+        {
+            player.transform.position = UnityEngine.Vector3.MoveTowards(player.transform.position, targetPos, moveSpeed * Time.deltaTime);
+            cameraControler.transform.rotation = UnityEngine.Quaternion.RotateTowards(cameraControler.transform.rotation, targetRot, moveSpeed * 100f * Time.deltaTime);
+
+            yield return null;
+        }
+
+        player.transform.position = targetPos;
+        cameraControler.transform.rotation = targetRot;
+    }
+
+    IEnumerator MoveQuad(UnityEngine.Vector3 targetPos)
     {
         audioSource.clip = paperSound;
         audioSource.Play();
-        while (Vector3.Distance(quad.transform.position, targetPos) > 0.01f)
+        while (UnityEngine.Vector3.Distance(quad.transform.position, targetPos) > 0.01f)
         {
-            quad.transform.position = Vector3.Lerp(
+            quad.transform.position = UnityEngine.Vector3.Lerp(
                 quad.transform.position,
                 targetPos,
                 Time.deltaTime * moveSpeed
