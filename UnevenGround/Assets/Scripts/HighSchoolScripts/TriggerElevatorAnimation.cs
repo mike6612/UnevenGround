@@ -2,16 +2,17 @@
 using UnityEngine;
 public class TriggerElevatorAnimation : MonoBehaviour
 {
-    LoadNextSceneAsync loadNextSceneAsync;
+    GameObject graduationAudioObject;
     AnimatorStateInfo stateInfo;
     public Animator animator;
     // Cache the hash of the bounce state.
     int m_BounceStateHash;
     //public bool shouldPlay = false;
     AudioSource audioSource;
+    [SerializeField] AudioSource doorCloseAudio;
     [SerializeField] float timer = 4f;
     [SerializeField] float timer2 = 4f;
-    [SerializeField] GameObject elevatorLight;
+    GameObject elevatorLight;
     Light elevatorLightComponent;
     float originalMoveScale = 0f;
     CAVE2WandNavigator playerNavigator;
@@ -20,7 +21,8 @@ public class TriggerElevatorAnimation : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        loadNextSceneAsync = FindObjectOfType<LoadNextSceneAsync>();
+        graduationAudioObject = GameObject.FindGameObjectWithTag("GraduationAudio");
+        elevatorLight = GameObject.FindGameObjectWithTag("ElevatorLight");
         elevatorLightComponent = elevatorLight.GetComponent<Light>();
         int currentSceneIndex = UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex;
         if (elevatorLight == null)
@@ -36,38 +38,22 @@ public class TriggerElevatorAnimation : MonoBehaviour
 
         animator = GetComponent<Animator>();
         animator.enabled = false;
-        //m_BounceStateHash = Animator.StringToHash("Base Layer.OpenDoor");
         audioSource = GetComponent<AudioSource>();
-
-        // DarkVoid scene
-        if (currentSceneIndex == 1)
-        {
-            PlayElevatorAnimation();
-            PlayElevatorSound();
-        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        // Wand laser interaction, not used (?)
-        // check if elevator button is touched by wand laser
-        //if (shouldPlay == true)
-        //{
-        //    shouldPlay = false;
-        //    StartCoroutine(ProcessElevatorAnimAudio());
-        //}
         if (shouldLowerLight)
         {
             elevatorLightComponent.intensity = Mathf.MoveTowards(elevatorLightComponent.intensity, 0f, fadeSpeed * Time.deltaTime);
         }
-        Debug.Log("shouldLowerLight: " + shouldLowerLight);
-        Debug.Log("inside?" + loadNextSceneAsync.isPlayerInside);
     }
 
     void OnTriggerEnter(Collider other)
     {
         if (!other.gameObject.CompareTag("Player")) { return; }
+
         playerNavigator = other.gameObject.GetComponent<CAVE2WandNavigator>();
         originalMoveScale = playerNavigator.movementScale;
 
@@ -81,13 +67,7 @@ public class TriggerElevatorAnimation : MonoBehaviour
         if (stateInfo.IsName("DoorClose"))
         {
             animator.SetTrigger("TriggerOpen");
-            //animator.Play(m_BounceStateHash, 0, 0f);
         }
-
-        if (stateInfo.IsName("DoorOpen"))
-        {
-        }
-
     }
 
     void PlayElevatorSound()
@@ -99,26 +79,28 @@ public class TriggerElevatorAnimation : MonoBehaviour
     IEnumerator ProcessElevatorAnimAudio(CAVE2WandNavigator playerNavigator)
     {
         playerNavigator.movementScale = 0f;
+
         PlayElevatorSound();
         yield return new WaitForSeconds(timer);
         PlayElevatorAnimation();
         playerNavigator.movementScale = originalMoveScale;
 
-        Debug.Log("before 11f");
+        doorCloseAudio.Play();
+        yield return new WaitForSeconds(5.5f);
+        doorCloseAudio.Play();
+
+
         yield return new WaitForSeconds(11f);
-        Debug.Log("after 11f");
         stateInfo = animator.GetCurrentAnimatorStateInfo(0);
-        if (stateInfo.IsName("DoorClose") && loadNextSceneAsync.isPlayerInside)
+
+        if (stateInfo.IsName("DoorClose") && LoadNextSceneAsync.isPlayerInside)
         {
-            Debug.Log("inside IF");
             //door closed, player is inside elevator, play sound and load next scene
             shouldLowerLight = true;
             PlayElevatorSound();
+            graduationAudioObject.GetComponent<AudioSource>().Stop();
             yield return new WaitForSeconds(timer + 1f);
-            loadNextSceneAsync.shouldLoadNextScene = true;
+            LoadNextSceneAsync.shouldLoadNextScene = true;
         }
-
-        Debug.Log("OUTSIDE IF");
-
     }
 }

@@ -273,6 +273,8 @@
      <Compile Include="Assets\Scripts\DarkVoid\TriggerLampLighting.cs" />
      <Compile Include="Assets\Scripts\DarkVoid\WindAudio.cs" />
      <Compile Include="Assets\Scripts\Final\Osiciliate.cs" />
+     <Compile Include="Assets\Scripts\HighSchoolScripts\ElevatorDarkVoid.cs" />
+     <Compile Include="Assets\Scripts\HighSchoolScripts\LoadFinalSceneAsync.cs" />
      <Compile Include="Assets\Scripts\HighSchoolScripts\LoadNextScene.cs" />
      <Compile Include="Assets\Scripts\HighSchoolScripts\LoadNextSceneAsync.cs" />
      <Compile Include="Assets\Scripts\HighSchoolScripts\MoveTowardsPosition.cs" />

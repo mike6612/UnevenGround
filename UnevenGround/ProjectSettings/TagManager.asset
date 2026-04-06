@@ -11,6 +11,8 @@ TagManager:
   - Book
   - ElevatorButtons
   - ElevatorLight
+  - ElevatorTrigger
+  - GraduationAudio
   layers:
   - Default
   - TransparentFX

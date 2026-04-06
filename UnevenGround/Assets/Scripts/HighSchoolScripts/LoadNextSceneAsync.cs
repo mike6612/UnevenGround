@@ -12,8 +12,9 @@ using UnityEngine.SceneManagement;
 public class LoadNextSceneAsync : MonoBehaviour
 {
     int currentSceneIndex = 0;
-    public bool isPlayerInside = false;
-    public bool shouldLoadNextScene = false;
+    public static bool isPlayerInside = false;
+    public static bool shouldLoadNextScene = false;
+
     void Start()
     {
         currentSceneIndex = UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex;
@@ -23,17 +24,18 @@ public class LoadNextSceneAsync : MonoBehaviour
             return;
         }
         StartCoroutine(WaitThenLoad());
+
+        // This will tell you EXACTLY which object is being talked to
+    }
+
+    void Update()
+    {
+
     }
 
     void OnCollisionEnter(Collision collision)
     {
-        // safety check
         if (!collision.gameObject.CompareTag("Player")) { return; }
-        if (UnityEngine.SceneManagement.SceneManager.sceneCountInBuildSettings <= currentSceneIndex + 1)
-        {
-            Debug.LogWarning("No more scenes to load.");
-            return;
-        }
         isPlayerInside = true;
     }
 
@@ -51,20 +53,28 @@ public class LoadNextSceneAsync : MonoBehaviour
     IEnumerator LoadScene()
     {
         yield return null;
-
         //Begin to load the Scene you specify
-        AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(++currentSceneIndex);
+        AsyncOperation asyncOperation;
+
+        if (currentSceneIndex == 0)
+        {
+            asyncOperation = SceneManager.LoadSceneAsync(1);
+        }
+        else
+        {
+            asyncOperation = SceneManager.LoadSceneAsync(2);
+        }
+
         //Don't let the Scene activate until you allow it to
         asyncOperation.allowSceneActivation = false;
+
 
         //When the load is still in progress, output the Text and progress bar
         while (!asyncOperation.isDone)
         {
-
             // Check if the load has finished
             if (asyncOperation.progress >= 0.9f)
             {
-                //Wait to you press the space key to activate the Scene
                 if (shouldLoadNextScene == true)
                 {
                     asyncOperation.allowSceneActivation = true;
