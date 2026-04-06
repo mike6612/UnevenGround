@@ -6,6 +6,7 @@ public class MoveAwayThreeWords : MonoBehaviour
 {
     public GameObject word;
 
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -16,6 +17,7 @@ public class MoveAwayThreeWords : MonoBehaviour
             if (osc != null)
             {
                 osc.TriggerExit();
+
             }
 
         }

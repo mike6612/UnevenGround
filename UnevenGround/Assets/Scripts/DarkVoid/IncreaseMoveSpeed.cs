@@ -3,21 +3,21 @@
 public class IncreaseMoveSpeed : MonoBehaviour
 {
     [SerializeField] private float speedIncreaseAmount = 0.5f;
+    private bool hasTriggered = false; // only trigger once
 
 
-    void FixedUpdate()
+    void OnTriggerEnter(Collider other)
     {
-        Debug.DrawLine(transform.position, Vector3.zero);
-    }
+        if (hasTriggered) return; // already triggered
 
-    void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
-            CAVE2WandNavigator playerWandNavigator = collision.gameObject.GetComponent<CAVE2WandNavigator>();
+            CAVE2WandNavigator playerWandNavigator = other.GetComponent<CAVE2WandNavigator>();
+
             if (playerWandNavigator != null)
             {
                 playerWandNavigator.movementScale += speedIncreaseAmount;
+                hasTriggered = true; // mark as used
                 Destroy(gameObject);
             }
         }
