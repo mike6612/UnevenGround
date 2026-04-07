@@ -10,18 +10,22 @@ public class ElevatorDarkVoid : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
-        PlayElevatorSound();
-        animator.SetTrigger("TriggerOpen");
+        StartCoroutine(ProcessElevatorAnimation());
 
+        //PlayElevatorSound();
     }
     void PlayElevatorSound()
     {
         StartCoroutine(ProcessOpenCloseSound());
     }
-    // Update is called once per frame
-    void Update()
-    {
 
+    // player outside the elevator, resume anim or close the elevator door
+    void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            StartCoroutine(ProcessCloseDoor());
+        }
     }
 
     void PlayElevatorAudio()
@@ -35,5 +39,19 @@ public class ElevatorDarkVoid : MonoBehaviour
         PlayElevatorAudio();
         yield return new WaitForSeconds(5f);
         PlayElevatorAudio();
+    }
+
+    IEnumerator ProcessCloseDoor()
+    {
+        animator.speed = 1f;
+        yield return new WaitForSeconds(2f);
+        PlayElevatorAudio();
+    }
+
+    IEnumerator ProcessElevatorAnimation()
+    {
+        animator.SetTrigger("TriggerOpen");
+        yield return new WaitForSeconds(3.8f);
+        animator.speed = 0f;
     }
 }
