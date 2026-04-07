@@ -56,6 +56,7 @@ public class registrarIntroTrigger : MonoBehaviour
 IEnumerator Sequence()
     {
         yield return StartCoroutine(MovePerson(target.position, cameraControllerTarget.rotation));
+        yield return new WaitForSeconds(3f);
         yield return StartCoroutine(ShowTypography());
     }
 IEnumerator ShowTypography()
