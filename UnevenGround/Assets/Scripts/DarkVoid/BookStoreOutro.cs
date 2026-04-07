@@ -21,6 +21,8 @@ public class BookStoreOutro : MonoBehaviour
     public bool canTrigger = true;
 
     public GameObject exitPortal;
+    private float originalTurnSpeed;
+    private float originalMovementScale;
 
 
 
@@ -33,16 +35,14 @@ public class BookStoreOutro : MonoBehaviour
 
     IEnumerator Sequence()
     {
-        float originalTurnSpeed = navigator.turnSpeed;
-        float originalMovementScale = navigator.movementScale;
+        originalTurnSpeed = navigator.turnSpeed;
+        originalMovementScale = navigator.movementScale;
         navigator.turnSpeed = 0f;
         navigator.movementScale = 0f;
 
         yield return StartCoroutine(MovePerson(playerTarget.position, cameraControllerTarget.rotation));
 
         yield return StartCoroutine(ShowTypography());
-        navigator.turnSpeed = originalTurnSpeed;
-        navigator.movementScale = originalMovementScale;
 
     }
 
@@ -70,6 +70,8 @@ public class BookStoreOutro : MonoBehaviour
         bookStoreEndingSentence.SetActive(true);
 
         yield return new WaitForSeconds(4f);
+        navigator.turnSpeed = originalTurnSpeed;
+        navigator.movementScale = originalMovementScale;
         exitPortal.SetActive(true);
 
     }

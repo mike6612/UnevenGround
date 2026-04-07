@@ -9933,7 +9933,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 181682551}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -23698,7 +23698,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 424245665}
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 312.195, y: 1.59, z: 30.24}
+  m_LocalPosition: {x: 312.195, y: 1.573, z: 30.24}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 278161890}
@@ -39423,7 +39423,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &692163353
 Transform:
   m_ObjectHideFlags: 0
@@ -39450,7 +39450,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1566daf491a16242b33bed22ea470be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 1165810730}
+  target: {fileID: 424245665}
   trigger: {fileID: 692163352}
   player: {fileID: 1976909653}
   cameraController: {fileID: 861172783}
@@ -81013,7 +81013,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1436975689}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 396.88, y: -19.03, z: -58.29}
+  m_LocalPosition: {x: 396.88, y: -19.03, z: -58.834}
   m_LocalScale: {x: 1.9248999, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 177730966}
@@ -83256,26 +83256,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114000012058711088, guid: c1621f4dd1e8c2748a5a423aa7736d55,
-        type: 3}
-      propertyPath: movementScale
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012058711088, guid: c1621f4dd1e8c2748a5a423aa7736d55,
-        type: 3}
-      propertyPath: turnSpeed
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012058711088, guid: c1621f4dd1e8c2748a5a423aa7736d55,
-        type: 3}
-      propertyPath: globalSpeedMod
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012058711088, guid: c1621f4dd1e8c2748a5a423aa7736d55,
-        type: 3}
-      propertyPath: turningEnabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4000012806552110, guid: c1621f4dd1e8c2748a5a423aa7736d55, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.96
@@ -83319,6 +83299,26 @@ PrefabInstance:
     - target: {fileID: 4000012806552110, guid: c1621f4dd1e8c2748a5a423aa7736d55, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012058711088, guid: c1621f4dd1e8c2748a5a423aa7736d55,
+        type: 3}
+      propertyPath: movementScale
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012058711088, guid: c1621f4dd1e8c2748a5a423aa7736d55,
+        type: 3}
+      propertyPath: turnSpeed
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012058711088, guid: c1621f4dd1e8c2748a5a423aa7736d55,
+        type: 3}
+      propertyPath: globalSpeedMod
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012058711088, guid: c1621f4dd1e8c2748a5a423aa7736d55,
+        type: 3}
+      propertyPath: turningEnabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224072241358244698, guid: c1621f4dd1e8c2748a5a423aa7736d55,
         type: 3}
@@ -102740,7 +102740,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: b4482c97315d10e4aa1b68eb3c4782b6,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.048
+      value: 0.988
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: b4482c97315d10e4aa1b68eb3c4782b6,
         type: 3}
@@ -119083,7 +119083,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1566daf491a16242b33bed22ea470be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 993527496}
+  target: {fileID: 403211872}
   trigger: {fileID: 2124504751}
   player: {fileID: 1976909653}
   cameraController: {fileID: 861172783}
