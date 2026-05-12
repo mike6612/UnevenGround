@@ -14,4 +14,4 @@ Uneven Ground: Beyond the Barrier is an immersive virtual reality experience dev
 | Michael Jaimes  | [mike6612](https://github.com/mike6612) |
 | Catherine Carter      | [IxamCat](https://github.com/IxamCat)    |
 | Kang Fan   | [jsnprojs](https://github.com/jsnprojs)    |
-| Jai Batra | Jai Batra |
+| Jai Batra | [jaiibatra](https://github.com/jatiibatra)|
