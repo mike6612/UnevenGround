@@ -12,7 +12,7 @@ public class registrarIntroTrigger : MonoBehaviour
     public CAVE2WandNavigator navigator;
     public GameObject player;
     public CAVE2InputManager inputManager;
-    public bool disableTurning;
+    //public bool disableTurning;
     public AudioClip maleSigh;
     
     public GameObject trigger;
@@ -20,17 +20,17 @@ public class registrarIntroTrigger : MonoBehaviour
     private AudioSource audioSource;
 
 
-    float originalTurnSpeed;
-    float originalMovementScale;
+    //float originalTurnSpeed;
+    //float originalMovementScale;
 
 
     private bool hasTriggered = false;
     public float moveSpeed = 0.002f;
 
-    public Transform target;
+    //public Transform target;
 
-    public Transform cameraControler;
-    public Transform cameraControllerTarget;
+    //public Transform cameraControler;
+    //public Transform cameraControllerTarget;
 
 
     void OnTriggerEnter(Collider other)
@@ -41,12 +41,12 @@ public class registrarIntroTrigger : MonoBehaviour
             hasTriggered = true;
 
 
-            originalMovementScale = navigator.movementScale;
-            originalTurnSpeed = navigator.turnSpeed;
+            //originalMovementScale = navigator.movementScale;
+            //originalTurnSpeed = navigator.turnSpeed;
 
 
-            navigator.movementScale = 0;
-            navigator.turnSpeed = 0;
+            //navigator.movementScale = 0f;
+            //navigator.turnSpeed = 0f;
             StartCoroutine(Sequence());
 
         }
@@ -55,7 +55,7 @@ public class registrarIntroTrigger : MonoBehaviour
 
 IEnumerator Sequence()
     {
-        yield return StartCoroutine(MovePerson(target.position, cameraControllerTarget.rotation));
+        //yield return StartCoroutine(MovePerson(target.position, cameraControllerTarget.rotation));
         yield return new WaitForSeconds(3f);
         yield return StartCoroutine(ShowTypography());
     }
@@ -79,25 +79,25 @@ IEnumerator ShowTypography()
 
         typographyObject.SetActive(false);
 
-        navigator.turnSpeed = originalTurnSpeed;
-        navigator.movementScale = originalMovementScale;
+        //navigator.turnSpeed = originalTurnSpeed;
+        //navigator.movementScale = originalMovementScale;
     }
 
 
-    IEnumerator MovePerson(UnityEngine.Vector3 targetPos, UnityEngine.Quaternion targetRot)
-    {
-        while (UnityEngine.Vector3.Distance(player.transform.position, targetPos) > 0.01f ||
-               Mathf.Abs(Mathf.DeltaAngle(player.transform.eulerAngles.y, targetRot.eulerAngles.y)) > 0.1f)
-        {
-            player.transform.position = UnityEngine.Vector3.MoveTowards(player.transform.position, targetPos, moveSpeed * Time.deltaTime);
-            cameraControler.transform.rotation = UnityEngine.Quaternion.RotateTowards(cameraControler.transform.rotation, targetRot, moveSpeed * 100f * Time.deltaTime);
+    //IEnumerator MovePerson(UnityEngine.Vector3 targetPos, UnityEngine.Quaternion targetRot)
+    //{
+    //    while (UnityEngine.Vector3.Distance(player.transform.position, targetPos) > 0.01f ||
+    //           Mathf.Abs(Mathf.DeltaAngle(cameraControler.transform.eulerAngles.y, targetRot.eulerAngles.y)) > 0.1f)
+    //    {
+    //        player.transform.position = UnityEngine.Vector3.MoveTowards(player.transform.position, targetPos, moveSpeed * Time.deltaTime);
+    //        cameraControler.transform.rotation = UnityEngine.Quaternion.RotateTowards(cameraControler.transform.rotation, targetRot, moveSpeed * 100f * Time.deltaTime);
 
-            yield return null;
-        }
+    //        yield return null;
+    //    }
 
-        player.transform.position = targetPos;
-        cameraControler.transform.rotation = targetRot;
-    }
+    //    player.transform.position = targetPos;
+    //    cameraControler.transform.rotation = targetRot;
+    //}
 
 }
 

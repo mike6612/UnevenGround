@@ -5,7 +5,7 @@ using UnityEngine;
 public class BookStoreAudioTrigger : MonoBehaviour
 {
     public AudioSource bookStoreAudio;
-    public bool canTrigger;
+    private bool canTrigger = true;
 
     private void OnTriggerEnter(Collider other)
     {

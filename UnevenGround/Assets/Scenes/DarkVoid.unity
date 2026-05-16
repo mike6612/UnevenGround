@@ -1217,10 +1217,6 @@ MonoBehaviour:
   foodOutroTypography: {fileID: 2049368159}
   exitPortal: {fileID: 1187039437}
   navigator: {fileID: 1392511555}
-  player: {fileID: 1976909653}
-  playerTarget: {fileID: 428047490}
-  cameraControler: {fileID: 861172783}
-  cameraControllerTarget: {fileID: 780160819}
   moveSpeed: 2
   canTrigger: 1
   maleRelief: {fileID: 8300000, guid: 913fe03d5970e784dab97d62eb64fe99, type: 3}
@@ -10783,7 +10779,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bookStoreAudio: {fileID: 702960423}
-  canTrigger: 0
 --- !u!65 &202078186
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -51026,14 +51021,11 @@ MonoBehaviour:
     type: 3}
   suspenseSoundEffect3: {fileID: 8300000, guid: 74b41c22d1438c945aece1cc1b1b0063,
     type: 3}
+  effects: []
   breathing: {fileID: 8300000, guid: 28c33f56d585745adac33393af5ccdae, type: 3}
   paperSound: {fileID: 8300000, guid: 3d3b46cbe71b2134cb1c4626736a57ee, type: 3}
   speed: 2
   intensity: 3
-  player: {fileID: 1976909653}
-  playerTarget: {fileID: 663152053}
-  cameraControler: {fileID: 861172783}
-  cameraControllerTarget: {fileID: 835001182}
 --- !u!82 &890616420
 AudioSource:
   m_ObjectHideFlags: 0
@@ -56716,7 +56708,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efe53fd68588e4549bb39fd5a7155ae0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  updateMode: 1
+  updateMode: 0
   updateInterval: 0.025
   syncPosition: 1
   syncRotation: 1
@@ -83256,6 +83248,26 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114000012058711088, guid: c1621f4dd1e8c2748a5a423aa7736d55,
+        type: 3}
+      propertyPath: movementScale
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012058711088, guid: c1621f4dd1e8c2748a5a423aa7736d55,
+        type: 3}
+      propertyPath: turnSpeed
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012058711088, guid: c1621f4dd1e8c2748a5a423aa7736d55,
+        type: 3}
+      propertyPath: globalSpeedMod
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012058711088, guid: c1621f4dd1e8c2748a5a423aa7736d55,
+        type: 3}
+      propertyPath: turningEnabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012806552110, guid: c1621f4dd1e8c2748a5a423aa7736d55, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.96
@@ -83299,26 +83311,6 @@ PrefabInstance:
     - target: {fileID: 4000012806552110, guid: c1621f4dd1e8c2748a5a423aa7736d55, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012058711088, guid: c1621f4dd1e8c2748a5a423aa7736d55,
-        type: 3}
-      propertyPath: movementScale
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012058711088, guid: c1621f4dd1e8c2748a5a423aa7736d55,
-        type: 3}
-      propertyPath: turnSpeed
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012058711088, guid: c1621f4dd1e8c2748a5a423aa7736d55,
-        type: 3}
-      propertyPath: globalSpeedMod
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012058711088, guid: c1621f4dd1e8c2748a5a423aa7736d55,
-        type: 3}
-      propertyPath: turningEnabled
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224072241358244698, guid: c1621f4dd1e8c2748a5a423aa7736d55,
         type: 3}
@@ -84418,7 +84410,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bookStoreAudio: {fileID: 702960423}
-  canTrigger: 0
 --- !u!65 &1495706421
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -100173,13 +100164,14 @@ GameObject:
   - component: {fileID: 1778441114}
   - component: {fileID: 1778441120}
   - component: {fileID: 1778441119}
+  - component: {fileID: 1778441118}
   m_Layer: 0
   m_Name: Quad_Petition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!64 &1778441114
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -100189,7 +100181,7 @@ MeshCollider:
   m_GameObject: {fileID: 1778441113}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
@@ -100255,6 +100247,19 @@ Transform:
   m_Father: {fileID: 249808685}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 90, y: -89.75101, z: 0}
+--- !u!65 &1778441118
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778441113}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5, y: 1, z: 0.5}
+  m_Center: {x: 0, y: -0.0000038146973, z: -0.00000055134296}
 --- !u!114 &1778441119
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -100790,10 +100795,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   navigator: {fileID: 1392511555}
-  player: {fileID: 1976909653}
-  playerTarget: {fileID: 214187563}
-  cameraControler: {fileID: 861172783}
-  cameraControllerTarget: {fileID: 780160819}
   moveSpeed: 2
   bookStoreEndingSentence: {fileID: 1314070916}
   canTrigger: 1
@@ -102336,13 +102337,9 @@ MonoBehaviour:
   navigator: {fileID: 1392511555}
   player: {fileID: 1976909653}
   inputManager: {fileID: 635100194}
-  disableTurning: 0
   maleSigh: {fileID: 8300000, guid: 084a810a5788516448495dce0995123f, type: 3}
   trigger: {fileID: 1815661960}
   moveSpeed: 2
-  target: {fileID: 978549920}
-  cameraControler: {fileID: 861172783}
-  cameraControllerTarget: {fileID: 446393809}
 --- !u!65 &1815661962
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -104270,10 +104267,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   navigator: {fileID: 1392511555}
-  player: {fileID: 1976909653}
-  playerTarget: {fileID: 214187563}
-  cameraControler: {fileID: 861172783}
-  cameraControllerTarget: {fileID: 1182356451}
   moveSpeed: 2
   bookStoreTypography: {fileID: 855367111}
   canTrigger: 1
@@ -119056,7 +119049,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2124504752
 Transform:
   m_ObjectHideFlags: 0

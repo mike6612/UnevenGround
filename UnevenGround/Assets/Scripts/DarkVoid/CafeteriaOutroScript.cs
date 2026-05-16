@@ -15,11 +15,11 @@ public class CafeteriaOutroScript : MonoBehaviour
 
 
     public CAVE2WandNavigator navigator;
-    public GameObject player;
-    public Transform playerTarget;
+    //public GameObject player;
+    //public Transform playerTarget;
 
-    public Transform cameraControler;
-    public Transform cameraControllerTarget;
+    //public Transform cameraControler;
+    //public Transform cameraControllerTarget;
     public float moveSpeed = 2f;
 
     public bool canTrigger = true;
@@ -42,36 +42,36 @@ public class CafeteriaOutroScript : MonoBehaviour
     {
     
 
-        float originalTurnSpeed = navigator.turnSpeed;
-        float originalMovementScale = navigator.movementScale;
-        navigator.turnSpeed = 0f;
-        navigator.movementScale = 0f;
+        //float originalTurnSpeed = navigator.turnSpeed;
+        //float originalMovementScale = navigator.movementScale;
+        //navigator.turnSpeed = 0f;
+        //navigator.movementScale = 0f;
 
-        yield return StartCoroutine(MovePerson(playerTarget.position, cameraControllerTarget.rotation));
+        //yield return StartCoroutine(MovePerson(playerTarget.position, cameraControllerTarget.rotation));
 
         yield return new WaitForSeconds(2f);
 
         yield return StartCoroutine(ShowTypography());
-        navigator.turnSpeed = originalTurnSpeed;
-        navigator.movementScale = originalMovementScale;
+        //navigator.turnSpeed = originalTurnSpeed;
+        //navigator.movementScale = originalMovementScale;
 
     }
 
 
-    IEnumerator MovePerson(UnityEngine.Vector3 targetPos, UnityEngine.Quaternion targetRot)
-    {
-        while (UnityEngine.Vector3.Distance(player.transform.position, targetPos) > 0.01f ||
-               Mathf.Abs(Mathf.DeltaAngle(cameraControler.transform.eulerAngles.y, targetRot.eulerAngles.y)) > 0.1f)
-        {
-            player.transform.position = UnityEngine.Vector3.MoveTowards(player.transform.position, targetPos, moveSpeed * Time.deltaTime);
-            cameraControler.transform.rotation = UnityEngine.Quaternion.RotateTowards(cameraControler.transform.rotation, targetRot, moveSpeed * 100f * Time.deltaTime);
+    //IEnumerator MovePerson(UnityEngine.Vector3 targetPos, UnityEngine.Quaternion targetRot)
+    //{
+    //    while (UnityEngine.Vector3.Distance(player.transform.position, targetPos) > 0.01f ||
+    //           Mathf.Abs(Mathf.DeltaAngle(cameraControler.transform.eulerAngles.y, targetRot.eulerAngles.y)) > 0.1f)
+    //    {
+    //        player.transform.position = UnityEngine.Vector3.MoveTowards(player.transform.position, targetPos, moveSpeed * Time.deltaTime);
+    //        cameraControler.transform.rotation = UnityEngine.Quaternion.RotateTowards(cameraControler.transform.rotation, targetRot, moveSpeed * 100f * Time.deltaTime);
 
-            yield return null;
-        }
+    //        yield return null;
+    //    }
 
-        player.transform.position = targetPos;
-        cameraControler.transform.rotation = targetRot;
-    }
+    //    player.transform.position = targetPos;
+    //    cameraControler.transform.rotation = targetRot;
+    //}
 
 
 

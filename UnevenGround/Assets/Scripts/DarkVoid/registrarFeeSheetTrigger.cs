@@ -1,5 +1,4 @@
-﻿using Boo.Lang;
-using System.Collections;
+﻿using System.Collections.Generic;
 using System.Numerics;
 using TMPro;
 using UnityEngine;
@@ -48,11 +47,11 @@ public class registrarFeeSheetTrigger : MonoBehaviour
     public float intensity = 3f;
     private Material mat;
 
-    public GameObject player;
-    public Transform playerTarget;
+    //public GameObject player;
+    //public Transform playerTarget;
 
-    public Transform cameraControler;
-    public Transform cameraControllerTarget;
+    //public Transform cameraControler;
+    //public Transform cameraControllerTarget;
 
     void Awake()
     {
@@ -86,20 +85,20 @@ public class registrarFeeSheetTrigger : MonoBehaviour
         if (other.CompareTag("Player") && !hasPlayed)
         {
             StartCoroutine(ShowSequence());
+            hasPlayed = true;
         }
     }
 
-    IEnumerator ShowSequence()
+    IEnumerator<object> ShowSequence()
     {
-        isRunning = true;
        
 
-        float originalTurnSpeed = navigator.turnSpeed;
-        float originalMovementScale = navigator.movementScale;
-        navigator.turnSpeed = 0f;
-        navigator.movementScale = 0f;
+        //float originalTurnSpeed = navigator.turnSpeed;
+        //float originalMovementScale = navigator.movementScale;
+        //navigator.turnSpeed = 0f;
+        //navigator.movementScale = 0f;
 
-        yield return StartCoroutine(MovePerson(playerTarget.position, cameraControllerTarget.rotation));
+        //yield return StartCoroutine(MovePerson(playerTarget.position, cameraControllerTarget.rotation));
 
 
 
@@ -143,12 +142,11 @@ public class registrarFeeSheetTrigger : MonoBehaviour
         yield return StartCoroutine(MoveQuad(originalPosition));
         quad.SetActive(false);
 
-        hasPlayed = true;
         petitionQuad.SetActive(true);
         yield return new WaitForSeconds(1.5f);
         yield return StartCoroutine(ShowEmotionTypography());
-        navigator.turnSpeed = originalTurnSpeed;
-        navigator.movementScale = originalMovementScale;
+        //navigator.turnSpeed = originalTurnSpeed;
+        //navigator.movementScale = originalMovementScale;
         audioSource.clip = breathing;
         audioSource.Play();
 
@@ -158,22 +156,22 @@ public class registrarFeeSheetTrigger : MonoBehaviour
 
 
 
-    IEnumerator MovePerson(UnityEngine.Vector3 targetPos, UnityEngine.Quaternion targetRot)
-    {
-        while (UnityEngine.Vector3.Distance(player.transform.position, targetPos) > 0.01f ||
-               Mathf.Abs(Mathf.DeltaAngle(cameraControler.transform.eulerAngles.y, targetRot.eulerAngles.y)) > 0.1f)
-        {
-            player.transform.position = UnityEngine.Vector3.MoveTowards(player.transform.position, targetPos, moveSpeed * Time.deltaTime);
-            cameraControler.transform.rotation = UnityEngine.Quaternion.RotateTowards(cameraControler.transform.rotation, targetRot, moveSpeed * 100f * Time.deltaTime);
+    //IEnumerator<object> MovePerson(UnityEngine.Vector3 targetPos, UnityEngine.Quaternion targetRot)
+    //{
+    //    while (UnityEngine.Vector3.Distance(player.transform.position, targetPos) > 0.01f ||
+    //           Mathf.Abs(Mathf.DeltaAngle(cameraControler.transform.eulerAngles.y, targetRot.eulerAngles.y)) > 0.1f)
+    //    {
+    //        player.transform.position = UnityEngine.Vector3.MoveTowards(player.transform.position, targetPos, moveSpeed * Time.deltaTime);
+    //        cameraControler.transform.rotation = UnityEngine.Quaternion.RotateTowards(cameraControler.transform.rotation, targetRot, moveSpeed * 100f * Time.deltaTime);
 
-            yield return null;
-        }
+    //        yield return null;
+    //    }
 
-        player.transform.position = targetPos;
-        cameraControler.transform.rotation = targetRot;
-    }
+    //    player.transform.position = targetPos;
+    //    cameraControler.transform.rotation = targetRot;
+    //}
 
-    IEnumerator MoveQuad(UnityEngine.Vector3 targetPos)
+    IEnumerator<object> MoveQuad(UnityEngine.Vector3 targetPos)
     {
         audioSource.clip = paperSound;
         audioSource.Play();
@@ -193,7 +191,7 @@ public class registrarFeeSheetTrigger : MonoBehaviour
     }
   
 
-    IEnumerator ShowEmotionTypography()
+    IEnumerator<object> ShowEmotionTypography()
     {
 
         HowDiagonal.SetActive(false);
