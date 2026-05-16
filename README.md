@@ -8,6 +8,11 @@ Uneven Ground: Beyond the Barrier is an immersive virtual reality experience dev
 
  CAVE2 is a trademark of the University of Illinois Board of Trustees
 
+
+ ## UIC Exhibition Pictures 
+ <img src="/images/1.jpeg" alt="First Image" width="300" height="200" /> <img src="/images/2.jpeg" alt="Second Image" width="300" height="200" /> <img src="/images/3.jpeg" alt="Third Image" width="300" height="200" /> <img src="/images/4.jpeg" alt="Fourth Image" width="300" height="200" /> <img src="/images/5.jpeg" alt="Fifth Image" width="300" height="200" />
+
+ 
  ## Contributors
 | Name | GitHub Username |
 | ------------- |:-------------:|
