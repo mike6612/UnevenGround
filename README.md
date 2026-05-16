@@ -1,4 +1,6 @@
 # Uneven Ground: Beyond the Barrier
+<img src="/images/2.jpeg" width="400" height="300" /> <img src="/images/3.jpeg" width="400" height="300" /> <img src="/images/4.jpeg" width="400" height="300" /> 
+
 ## What is Uneven Ground: Beyond the Barrier?
 
 
@@ -10,7 +12,7 @@ Uneven Ground: Beyond the Barrier is an immersive virtual reality experience dev
 
 
  ## UIC Exhibition Pictures 
- <img src="/images/1.jpeg" alt="First Image" width="300" height="200" /> <img src="/images/2.jpeg" alt="Second Image" width="300" height="200" /> <img src="/images/3.jpeg" alt="Third Image" width="300" height="200" /> <img src="/images/4.jpeg" alt="Fourth Image" width="300" height="200" /> <img src="/images/5.jpeg" alt="Fifth Image" width="300" height="200" />
+ <img src="/images/1.jpeg" alt="First Image" width="300" height="200" />  <img src="/images/5.jpeg" alt="Fifth Image" width="300" height="200" />
 
  
  ## Contributors
