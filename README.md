@@ -12,7 +12,7 @@ Uneven Ground: Beyond the Barrier is an immersive virtual reality experience dev
 
 
  ## UIC Exhibition Pictures 
- <img src="/images/1.jpeg" alt="First Image" width="300" height="200" />  <img src="/images/5.jpeg" alt="Fifth Image" width="300" height="200" />
+ <img src="/images/1.jpeg" alt="First Image" width="350" height="250" />  <img src="/images/5.jpeg" alt="Second Image" width="350" height="250" />
 
  
  ## Contributors
